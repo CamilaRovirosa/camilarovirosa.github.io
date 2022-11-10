@@ -1,0 +1,41 @@
+
+.sec{
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+}
+.shape{
+    max-width: 100%;
+    height: 100vh;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    //color: red;
+    background-color: #251d29;
+    position: relative;
+    padding: 10em 5em;
+}
+
+/*.container{
+    width: 100%;
+    will-change: contents;
+    height: 90%;
+    min-height: 566px;
+    position: absolute;
+    opacity: 0;
+    //top:5%;
+    margin: 0 auto;
+    z-index: 1;
+    //transform-style: preserve-3d;
+    //animation: fadeIn 1s forwards;
+    //animation-delay: 1s ;
+}*/

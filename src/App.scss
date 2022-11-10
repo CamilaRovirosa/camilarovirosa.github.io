@@ -1,0 +1,54 @@
+///////Variables////////
+/// ///Colors///
+$bg-black: #251d29;
+$bg-white: #f0f8ff;
+///Imports///
+@import 'animate.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:ital,wght@0,100;0,200;1,100;1,200;1,300&display=swap');
+
+
+///Fonts///
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+@font-face {
+font-family: "3d-Thirteen-Pixel";
+src: url(./Assets/fonts/3D-Thirteen-Pixel-Fonts.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Joystix";
+    src: url(./Assets/fonts/joystixMonospace.ttf) format('truetype');
+    }
+
+@font-face {
+    font-family: "PressStart2P";
+    src: url(./Assets/fonts/PressStart2P-Regular.ttf) format('truetype');
+    }
+
+@font-face {
+    font-family: "MobileFont";
+    src: url(./Assets/fonts/MobileFont.ttf) format('truetype');
+    }
+@font-face {
+    font-family: "Simplo2";
+    src: url(./Assets/fonts/simplto2.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: "ka1";
+        src: url(./Assets/fonts/ka1.ttf) format('truetype');
+        }
+/************ Default Css ************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  html {
+    
+    scroll-padding-top: 75px;
+    background-color: $bg-black;
+  }  
