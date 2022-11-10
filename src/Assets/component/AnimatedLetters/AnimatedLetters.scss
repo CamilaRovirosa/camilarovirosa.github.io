@@ -1,0 +1,27 @@
+
+.text-animate{
+    display: inline-block;
+    opacity: 0;
+    animation: rotateIn 1s 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+    transition: all 0.5s ease;
+}
+.text-animate-hover{
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+    letter-spacing: 3px;
+    &:hover{
+        animation: swing 1s;
+        //color:#251d29;
+        font-family: 'ka1', Arial, sans-serif;
+        text-transform: capitalize;
+        
+    }
+}
+@for $i from 1 through 23{
+    .text-animate._#{$i}{
+        animation-delay: #{$i/10}s;
+    }
+}

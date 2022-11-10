@@ -1,0 +1,96 @@
+@use '../../../App.scss' as c;
+
+.nav-bar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  background:transparent;
+  text-align: center;
+  padding: 0 0em;
+  z-index: 10;
+}
+.nav-bar-tab{
+    position: relative;
+    display:flex;
+    //float: center;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    padding-right: 2em;
+    flex: 1 1 auto;
+    color: c.$bg-white;
+    overflow: hidden;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: 'Silkscreen', Arial, sans-serif;
+    text-align: center;
+    flex-basis: content;
+    flex-wrap: wrap;
+    
+    &:hover {
+      background-position: 0 100%;
+      font-family: 'Simplo2', Arial, sans-serif;
+
+    }
+  }
+.space{
+  display: flex;
+  padding-left: 50rem;
+}
+
+@media (max-width: 800px) {
+	.nav-bar,
+	.nav-bar-tab{
+		font-size: 1rem;
+	}
+}
+@media (max-width: 400px) {
+	.nav-bar,
+	.nav-bar-tab{
+		font-size: 2rem;
+	}
+}
+.nav-bar-container{
+  
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    position: fixed;
+        top: 0;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background:#3a4866;
+    z-index: 10;
+    
+    /*&--top {
+        position: fixed;
+        top: 0;
+    }*/
+  }
+    .logo{
+      display: block;
+      padding: 1.5em 0;
+      top: 0.2em;
+
+    }
+    .ico{
+      display: block;
+      margin: auto auto;
+      width: 40px;
+      height: auto;
+      
+    }
+    .ico:hover {
+      transform: scale(1.5);
+      transition: all 0.5s ease;
+    }
+
+
+
+  

@@ -1,0 +1,200 @@
+///Colors///
+$bg-black: #251d29;
+$bg-white: #f0f8ff;
+///
+.loader{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    background: $bg-black;
+    color: $bg-white;
+    font-family: 'PressStart2P', Arial, sans-serif;
+    animation: fadeOut 2s 2s forwards;
+    z-index: 99;
+}
+
+.loading{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 70vh;
+    line-height: 75px;
+    background: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $bg-white;
+    overflow: hidden;
+    //align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    //animation: fadeOut 2s 4s forwards;
+    & span{
+        display: block;
+        background: #fff;
+        
+    }
+    & span:nth-child(1), & span:nth-child(3){
+        position: absolute;
+        height: 2px;
+        width: 100%;
+    }
+    & span:nth-child(2), & span:nth-child(4){
+        position: absolute;
+        height: 100%;
+        width: 2px;
+    }
+
+    & span:nth-child(1){
+        top: 0;
+        left: -100%;
+    }
+    & span:nth-child(2){
+        top: -100%;
+        right: 0;
+        
+    }
+    & span:nth-child(3){
+        bottom: 0;
+        right: 100%;
+        
+    }
+    & span:nth-child(4){
+        bottom: 100%;
+        left: 0;
+       
+    }
+    @keyframes anim1 {
+
+        to{
+            top: 0;
+            left: 0;
+
+        }
+    }
+    @keyframes anim2 {
+
+        to{
+
+            top: 0;
+            right: 0;
+        }
+    }
+    @keyframes anim3 {
+
+      to{
+          bottom: 0;
+          right: 0;
+
+      }
+  }
+    @keyframes anim4 {
+
+      to{
+
+          bottom: 0;
+          left: 0;
+      }
+    }
+
+    & span:nth-child(1){
+      animation: anim1 1s linear forwards;
+      //animation-delay: .2s 
+    }
+    & span:nth-child(2){
+      animation: anim2 1s linear forwards;
+      animation-delay: 1s 
+    }
+    & span:nth-child(3){
+      animation: anim3 1s linear forwards;
+      animation-delay: 1s 
+    }
+    & span:nth-child(4){
+      animation: anim4 1s linear forwards;
+      //animation-delay: 3s 
+    }
+    &__text{
+
+        position: relative;
+        //top: 10%;
+        left: 0.4em;       
+        padding: 2px;
+        //padding-left: 10px;
+        color: $bg-black;
+        //font-size: 1rem;
+        font-size: 2.8rem;
+        font-weight: 700px;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        //text-indent: -2%;
+        //height: 80%; 
+        box-sizing: border-box;
+        z-index: 1;
+        text-shadow: -2px -2px 0 $bg-white, 1px -1px 0 $bg-white, -1px 0px 0 $bg-white, 1px 1px 0 $bg-white;
+        letter-spacing: 1px;
+        
+    
+      }
+
+      @media  only screen and (min-width: 576px) {
+        .loading__text {
+          font-size: 5.5rem;
+            //top: 3rem;
+            left: 1em;
+          }
+        }
+      @media only screen and (min-width: 768px) {
+        .loading__text {
+            font-size: 6rem;
+            //top: 3rem;
+            left: 0.8em;
+          }
+        }
+      @media only screen and  (min-width: 992px) {
+        .loading__text {
+          font-size: 5.5rem;
+          //top: 3rem;
+          left: 0.5em;
+          }
+        }
+      @media (min-width: 1200px) {
+        .loading__text {
+            font-size: 7rem;
+            left:.5em;
+          }
+        }
+        &__text::after {
+          content: attr(data-text);
+          position:absolute;
+          padding-left: 10px;
+          padding: 10px;
+          left: 0;
+          top: 0;
+          color: $bg-white;
+          overflow: hidden;
+          animation: animloader 2s linear forwards;
+    
+        }
+        @keyframes animloader {
+          0% {
+            width: 0%;
+            
+          }
+          100% {
+            width: 100%;
+          }
+        }  
+}
+@media (max-width: 920px) {
+  .loading{
+    width: 90%;
+    height: 40%;
+    }
+  }

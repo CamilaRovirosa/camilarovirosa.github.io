@@ -1,0 +1,161 @@
+@use '../../../App.scss' as c;
+
+.home-page{
+    
+
+    .text-zone{
+        position:absolute;
+        left: 5%;
+        top: 20%;
+        transform: translate(-5% -20%);
+        width: 50%;
+        max-height: 90%;
+        z-index: 1;
+    }
+    h1{
+        color: c.$bg-white;
+        font-family:'Joystix', 'Poppins', Arial, sans-serif ;
+        font-size: 8rem;
+        font-weight:800;
+        letter-spacing: 3px;
+    }
+    h2{
+        color: c.$bg-white;
+        font-family: 'Comfortaa','Poppins', Arial, sans-serif ;
+        font-size: 2rem;
+        
+        &::before{
+            content: '<h2>';
+            color:c.$bg-white;
+            font-size: 1.4rem;
+            position: relative;
+            padding: 10px;
+            //margin-top: -40px;
+            //left: 15px;
+            
+            opacity: 0.6;
+        }
+        &::after{
+            content: '<h2> ';
+            color:c.$bg-white;
+            font-size: 1.4rem;
+            position: relative;
+            padding: 10px;
+            //margin-top: 18px;
+            //margin-left: 20px;
+            animation: fadeIn 1s 1.7s backwards;
+            opacity: 0.6;
+        }
+    }
+    .flat-button{
+        position: relative;
+        left: 20%;
+        color:c.$bg-white;
+        padding: 10px 18px;
+        margin-top: 25px;
+        float: left;
+        border: 1px solid c.$bg-white;
+        font-family: 'Silkscreen','Poppins', Arial, sans-serif ;
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 4px;
+        white-space: nowrap;
+        animation: pulse 1s 2s  forwards;
+        animation-iteration-count: 2;
+        text-decoration: none;
+        border-radius: 5px;
+        &:hover{
+            background: c.$bg-white;
+            color: lightskyblue;
+            animation: rubberBand 1s forwards;
+
+        }
+    }
+/*    .base::before{
+        content:'';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 5vh;
+        background: linear-gradient(transparent ,#251d29);
+        z-index: 3;
+      }
+      .hero{
+        //width: 1200px;
+        //display: block;
+        //width: 100vw;
+        height: 100vh;
+        //overflow: hidden;
+        position: relative;
+      }
+      .layer {
+        background-attachment: fixed;
+        background-position: bottom center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -3;
+        background-size: cover;
+        display: block;
+        object-fit: cover;
+        pointer-events: none;
+        
+      }
+
+      .layer-bg{
+        background-image: url(./../../images/Parallax/fondoClaro.png);
+        
+      }
+      .layer-blue{
+        content:'';
+        position: absolute;
+        top: -200vh;
+        width: 100%;
+        height: 200vh;
+        background-color: #3a4866;
+        //background: linear-gradient(#3a4866, transparent);
+        //z-index: -2;
+      }
+      .layer-bg1{
+        background-image: url(./../../images/Parallax/fondoOscuro.png);
+      }
+      .layer-1{
+        background-image: url(./../../images/Parallax/nubes1.png);
+        //right: 50%;
+      }
+      .layer-2{
+        background-image: url(./../../images/Parallax/nubes2.png);
+      }
+      .layer-3{
+        background-image: url(./../../images/Parallax/nubes3.png);
+      }
+      .layer-4{
+        background-image: url(./../../images/Parallax/edificio.png);
+      }
+      .layer-5{
+        background-image: url(./../../images/Parallax/verde.png);
+      }
+      .layer-6{
+        background-image: url(./../../images/Parallax/casa.png);
+      }
+      .layer-7{
+        background-image: url(./../../images/Parallax/piso.png);
+        position: absolute;
+        z-index: 2;
+      }
+      .layer-8{
+        background-image: url(./../../images/Parallax/luz.png);
+        animation: flash 1s ;
+        animation-delay: 2s;
+        animation-direction: alternate; 
+        opacity: 1;
+      }
+      .layer-8::before{
+        opacity: 0;
+      }
+  */
+}

@@ -1,0 +1,149 @@
+/*.banner{
+    position: relative;
+    display: block;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;  
+  }
+  @media  only screen and (min-width: 576px) {
+    .banner {
+      width: 100vw;
+      height: 100vh;  
+      }
+    }
+  @media only screen and (min-width: 768px) {
+    .banner {
+        
+      }
+    }
+  @media only screen and  (min-width: 992px) {
+    .banner {
+      
+      }
+    }
+  @media (min-width: 1200px) {
+    .banner {
+        
+      }
+    }*/
+    .base::before{
+      content:'';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 5vh;
+      background: linear-gradient(transparent ,#251d29);
+      z-index: 3;
+    }
+    .hero{
+      //width: 1200px;
+      //display: block;
+      //width: 100vw;
+      height: 100vh;
+      //overflow: hidden;
+      position: relative;
+    }
+    .layer {
+      background-attachment: fixed;
+      background-position: bottom center;
+      background-size: auto;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -3;
+      background-size: cover;
+      display: block;
+      object-fit: cover;
+      pointer-events: none;
+      
+    &-bg{
+      background-image: url(./../../images/Parallax/Compressed/fondoClaro_compressed.png);
+      
+    }
+    &-blue{
+      content:'';
+      position: absolute;
+      top: -200vh;
+      width: 100%;
+      height: 200vh;
+      background-color: #3a4866;
+      //background: linear-gradient(#3a4866, transparent);
+      //z-index: -2;
+    }
+    &-bg1{
+      background-image: url(./../../images/Parallax/Compressed/fondoOscuro_compressed.png);
+    }
+    &-1{
+      background-image: url(./../../images/Parallax/Compressed/nubes1_compressed.png);
+      //right: 50%;
+    }
+    &-2{
+      background-image: url(./../../images/Parallax/Compressed/nubes2_compressed.png);
+    }
+    &-3{
+      background-image: url(./../../images/Parallax/Compressed/nubes3_compressed.png);
+    }
+    &-4{
+      background-image: url(./../../images/Parallax/Compressed/edificio_compressed.png);
+    }
+    &-5{
+      background-image: url(./../../images/Parallax/Compressed/verde_compressed.png);
+    }
+    &-6{
+      background-image: url(./../../images/Parallax/Compressed/casa1_compressed.png);
+    }
+   /* .layer-cat{
+      background-image: url(./../../images/Parallax/cat.png);
+      position: absolute;
+    }
+    .layer-tree{
+      background-image: url(./../../images/Parallax/tree.png);
+      position: absolute;
+    }
+    .layer-mobil{
+      background-image: url(./../../images/Parallax/mobil.png);
+      position: absolute;
+    }
+    .layer-deco{
+      background-image: url(./../../images/Parallax/deco.png);
+      position: absolute;
+    }
+    .layer-sombra{
+      background-image: url(./../../images/Parallax/sombra.png);
+      position: absolute; 
+    }*/
+    &-7{
+      background-image: url(./../../images/Parallax/Compressed/piso_compressed.png);
+      position: absolute;
+      z-index: 2;
+    }
+    &-8{
+      background-image: url(./../../images/Parallax/Compressed/luz_compressed.png);
+      animation: flash 1s ;
+      animation-delay: 2s;
+      animation-direction: alternate; 
+      opacity: 1;
+    }
+    &-8::before{
+      opacity: 0;
+    }
+  }
+    .hero-mobile {
+      display: none;
+      background: url(./../../images/Parallax/Compressed/casa1-5_compressed.png) no-repeat center bottom / cover;
+      height: 320px;
+    }
+   @media all and (max-width: 640px) {
+      .hero {
+         display: none;
+         //visibility: hidden;
+      }
+      .hero-mobile {
+         display: block;
+      }
+    }
