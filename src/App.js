@@ -9,9 +9,10 @@ import Skills from "./Assets/component/Skills/Skills";
 //import NavBar from "./Assets/component/Nav/NavBar.js";
 //import Loader from "./Assets/component/loader/Loader";
 import  "./App.scss";
+import NavBar from "./Assets/component/Nav/NavBar.js";
 function App() {
   return (
-    <>
+    /*<>
     
       <Routes>
         <Route path = "/" element={<Layout/>}>
@@ -22,7 +23,15 @@ function App() {
             <Route path="/Contact" element={<Contact/>} />
         </Route>
       </Routes>
-    </>
+  </>*/
+  <div>
+    <NavBar/>
+    <Home/>
+    <AboutMe/>
+    <Skills/>
+    <Projects/>
+    <Contact/>
+  </div>
   );
 }
 

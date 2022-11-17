@@ -2,7 +2,9 @@
 .text-animate{
     display: inline-block;
     opacity: 0;
-    animation: rotateIn 1s 1s;
+    animation: rotateIn;
+    animation-duration: 1s; 
+    animation-delay: 5s; 
     animation-fill-mode: forwards;
     min-width: 10px;
     transition: all 0.5s ease;

@@ -11,18 +11,12 @@ import Loader from "../loader/Loader"
 const Layout = ()=>{
     return(
         <div className="App">    
-                  <Loader/>
+                 
                 <NavBar/>
             <div className="page">
                 <Outlet/>
                
-                    <About/>
-                
-                    <Skills/>
-              
-                    <Projects/>
-               
-                    <Contact/>
+                   
 
             </div>
         </div>

@@ -1,12 +1,14 @@
 
 const Contact = ()=> {
     return (
-    
-            <div className='con'>
-                Contact
-                
-            </div>
-        
+        <section name="contact" className='shape'>         
+            
+                <div className='title'>
+                    <h1>Contact</h1>
+                </div>
+            
+        </section>
+            
     );
 }
 export default Contact;
