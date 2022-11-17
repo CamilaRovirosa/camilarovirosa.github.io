@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 //import "../styles/Loader.scss";
 import Expire from "./Expire";
 import "./loader2.scss";
