@@ -1,9 +1,14 @@
-import {useEffect, useState} from 'react';
+import {useEffect, useState, useContext, useRef} from 'react';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap-trial/dist/ScrollTrigger";
+import { useIsomorphicLayoutEffect } from "./useIsomorphicLayoutEffect";
 import './Banner.scss';
 import banner from '../../images/banner1-2N1-1.png';
 const Banner =() =>{
+    
     const [offsetY, setOffsetY]= useState('layer');
     useEffect(()=>{
+        
         
         const handleScroll = () => setOffsetY(window.scrollY)
             window.addEventListener('scroll',handleScroll
