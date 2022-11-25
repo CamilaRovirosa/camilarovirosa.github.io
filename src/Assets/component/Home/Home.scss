@@ -1,8 +1,10 @@
 @use '../../../App.scss' as c;
 
 .home-page{
-
-
+  //min-height: fit-content !important;
+  overflow: hidden;
+  
+  position: relative;
     .text-zone{
         position:absolute;
         left: 5%;

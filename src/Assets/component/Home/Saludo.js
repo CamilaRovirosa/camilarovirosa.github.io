@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import AnimatedLettes from "../../AnimatedLetters/AnimatedLetters.js";
+import AnimatedLettes from "../AnimatedLetters/AnimatedLetters";
 import './Home.scss'
 const Saludo = ()=> {
     const [letterClass, setLetterClass] = useState('text-animate');

@@ -3,6 +3,7 @@ import {Link} from 'react-scroll';
 import Loader from "../loader/Loader.js"
 import AnimatedLettes from "../AnimatedLetters/AnimatedLetters.js";
 import Banner from "../Banner/Banner.js";
+//import Saludo from "./Saludo"
 import './Home.scss'
 const Home = ()=> {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -17,22 +18,23 @@ const Home = ()=> {
         return () => clearTimeout(timer);
       }, []);
 
-      const [offsetY, setOffsetY]= useState('layer');
-      useEffect(()=>{
-          
-          const handleScroll = () => setOffsetY(window.scrollY)
-              window.addEventListener('scroll',handleScroll
-              );
-              return()=>{
-                  window.removeEventListener('scroll', handleScroll);
-              };
-  
-          }, []);
+      const txt = document.getElementById('txt');
+    const [offsetY, setOffsetY]= useState('layer');
+    useEffect(()=>{
+        
+        const handleScroll = () => setOffsetY(window.scrollY)
+            window.addEventListener('scroll',handleScroll
+            );
+            return()=>{
+                window.removeEventListener('scroll', handleScroll);
+            };
+
+        }, []);
     return (
         
         <div name="home" className="home-page">
          <Loader/>
-            <div className="text-zone"  style={{transform:`translate(0, ${offsetY *1}px)`} } >
+            <div className="text-zone" id="txt" style={{transform:`translate(0, ${offsetY *1}px)`} } >
                 <h1 className="h1"> 
                     <AnimatedLettes letterClass={letterClass}
                     strArray={helloArray}

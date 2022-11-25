@@ -1,9 +1,7 @@
 import './About.scss';
 import React , { useState } from 'react';
 
-import { BiCaretUp, BiCaretDown } from "react-icons/bi";
-import { BsBookmarkHeartFill } from "react-icons/bs";
-import { GiThink, Gi3DMeeple, GiAxolotl, GiHeartOrgan, GiBrain } from "react-icons/gi";
+import { GiThink, GiAxolotl, GiHeartOrgan, GiBrain } from "react-icons/gi";
 import { FaLaptopCode} from "react-icons/fa";
 import { TiArrowLeftOutline, TiArrowRightOutline } from "react-icons/ti";
 import { IoGameController } from "react-icons/io5";
@@ -14,13 +12,12 @@ import cuadrado from '../../images/cuadroazul.png';
 import core from '../../images/CorePortrait.png';
 import verde from '../../images/CuadroVerde.png';
 import work from '../../images/WorkPortrait.png';
-import Card from './Card';
 
 const AboutMe =() =>{
-    const but = [<GiHeartOrgan/>,<IoGameController/>, <FaLaptopCode/>];
+    
     const slides = [
         {id: 1,
-         button:  <GiHeartOrgan/> ,
+         
          image: cuadrado,
          image2: core ,
          title: "¡¡¡Hola!!!",
@@ -30,7 +27,7 @@ const AboutMe =() =>{
          style1: "img2 img-scaleC",
         },
         {id: 2,
-            button:<IoGameController/>, 
+             
             image: circulo,
             image2: love ,
             style: "circulo",
@@ -40,7 +37,7 @@ const AboutMe =() =>{
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         },
         {id: 3,
-            button:  <FaLaptopCode/> ,
+            
             image: verde,
             image2: work ,
             style: "verde",
@@ -69,7 +66,7 @@ const AboutMe =() =>{
     return( 
         <section name='about' className='shape'>               
             <div className='title'>
-                <h1 className="me">Un Poco Sobre Mi</h1>
+                <h2 className="me">Un Poco Sobre Mi</h2>
             </div>
             <div className='title__arr'>
                 <GiHeartOrgan/>

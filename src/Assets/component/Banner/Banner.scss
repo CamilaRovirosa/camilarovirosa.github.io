@@ -34,20 +34,23 @@
       bottom: 0;
       width: 100%;
       height: 5vh;
-      background: linear-gradient(transparent ,#3a4866);
+      background: linear-gradient(transparent ,#252e41);
       z-index: 3;
     }
     .hero{
       //width: 1200px;
-      //display: block;
+      display:flex;
       width: 100%;
       height: 100vh;
       //overflow: hidden;
-      position: relative;
+      //position: relative;
     }
     .layer {
-      background-attachment: fixed;
-      background-position: bottom center;
+      //background-attachment: fixed;
+      //background-position: bottom center;
+      -webkit-background-size: cover;
+    -moz-background-size: cover; 
+    -o-background-size: cover;
       background-size: auto;
       background-repeat: no-repeat;
       width: 100%;
@@ -63,40 +66,55 @@
       will-change: transform;
       
     &-bg{
-      background-image: url(./../../images/Parallax/Compressed/fondoClaro_compressed.png);
+      background-color: #7ca1c0;
+      //background-image: url(./../../images/Parallax/Compressed/fondoClaro_compressed.png);
       
     }
     &-blue{
       content:'';
       position: absolute;
       top: -200vh;
-      width: 100%;
+      width: 100vw;
       height: 200vh;
       background-color: #3a4866;
       //background: linear-gradient(#3a4866, transparent);
       //z-index: -2;
     }
-    &-bg1{
-      background-image: url(./../../images/Parallax/Compressed/fondoOscuro_compressed.png);
+    #bg1{
+      width: 100%;
+      height: 100%;
+      //background-image: url(./../../images/Parallax/Compressed/fondoOscuro_compressed.png);
     }
-    &-1{
-      background-image: url(./../../images/Parallax/Compressed/nubes1_compressed.png);
+    #b1{
+      width: 100%;
+      height: 100%;
+      //background-image: url(./../../images/Parallax/Compressed/nubes1_compressed.png);
       //right: 50%;
     }
-    &-2{
-      background-image: url(./../../images/Parallax/Compressed/nubes2_compressed.png);
+    #b2{
+      width: 100%;
+      height: 100%;
+      //background-image: url(./../../images/Parallax/Compressed/nubes2_compressed.png);
     }
-    &-3{
-      background-image: url(./../../images/Parallax/Compressed/nubes3_compressed.png);
+    #b3{
+      width: 100%;
+      height: 100%;
+      //background-image: url(./../../images/Parallax/Compressed/nubes3_compressed.png);
     }
-    &-4{
-      background-image: url(./../../images/Parallax/Compressed/edificio_compressed.png);
+    #b4{
+      width: 100%;
+      height: 100%;
+      //background-image: url(./../../images/Parallax/Compressed/edificio_compressed.png);
     }
-    &-5{
-      background-image: url(./../../images/Parallax/Compressed/verde_compressed.png);
+    #b5{
+      width: 100%;
+      height: 100%;
+      //background-image: url(./../../images/Parallax/Compressed/verde_compressed.png);
     }
-    &-6{
-      background-image: url(./../../images/Parallax/Compressed/casa1_compressed.png);
+    #b6{
+      width: 100%;
+      height: 100%;
+      //background-image: url(./../../images/Parallax/Compressed/casaYverde.png);
     }
    /* .layer-cat{
       background-image: url(./../../images/Parallax/cat.png);
@@ -118,19 +136,22 @@
       background-image: url(./../../images/Parallax/sombra.png);
       position: absolute; 
     }*/
-    &-7{
-      background-image: url(./../../images/Parallax/Compressed/piso_compressed.png);
+    #b7{
+      width: 100%;
+      height: 100%;
+      //background-image: url(./../../images/Parallax/Compressed/piso_compressed.png);
       position: absolute;
       z-index: 2;
     }
-    &-8{
-      background-image: url(./../../images/Parallax/Compressed/luz_compressed.png);
+    &_b8{
+      
+      //background-image: url(./../../images/Parallax/Compressed/luz_compressed.png);
       animation: flash 1s ;
-      animation-delay: 3s;
+      animation-delay: 5s;
       animation-direction: alternate; 
       opacity: 1;
     }
-    &-8::before{
+    &_b8::before{
       opacity: 0;
     }
   }
@@ -141,7 +162,9 @@
       
       
     }
-   @media all and (max-width: 768px) {
+   
+   
+   @media all and (max-width: 576px) {
       .hero {
          display: none;
          //visibility: hidden;
@@ -154,7 +177,7 @@
         content:'';
         position: absolute;
         top: 30rem;
-        width: 100%;
+        width: 100vw;
         height: 3vh;
         background: linear-gradient(transparent ,#3a4866);
         z-index: 3;

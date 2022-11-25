@@ -6,6 +6,7 @@ import Projects from "./Assets/component/Projects/Projects";
 import AboutMe from "./Assets/component/About/AboutMe";
 import Contact from "./Assets/component/Contact/Contact";
 import Skills from "./Assets/component/Skills/Skills";
+import Footer from "./Assets/component/Footer/Footer";
 //import NavBar from "./Assets/component/Nav/NavBar.js";
 //import Loader from "./Assets/component/loader/Loader";
 import  "./App.scss";
@@ -31,6 +32,7 @@ function App() {
     <Skills/>
     <Projects/>
     <Contact/>
+    <Footer/>
   </div>
   );
 }

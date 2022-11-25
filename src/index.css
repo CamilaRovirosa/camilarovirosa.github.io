@@ -40,12 +40,12 @@ h5,
 h6{
     overflow-wrap: break-word;
 }
-img,
+/*img,
 video,
 canvas,
 svg{
-    max-width: 100%;
-}
+    width: 100%;
+}*/
 a{
   text-decoration: none;
 }
