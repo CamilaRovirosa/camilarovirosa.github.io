@@ -66,7 +66,7 @@ const AboutMe =() =>{
     return( 
         <section name='about' className='shape'>               
             <div className='title'>
-                <h2 className="me">Un Poco Sobre Mi</h2>
+                <h2 id="h2">Un Poco Sobre Mi</h2>
             </div>
             <div className='title__arr'>
                 <GiHeartOrgan/>

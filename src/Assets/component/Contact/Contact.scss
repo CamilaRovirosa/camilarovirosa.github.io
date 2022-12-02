@@ -14,11 +14,15 @@
     
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 .title{
     align-content: center;
     align-items: center;
+   
+    animation-fill-mode: forwards;
     
     //padding: 10em 0;
     &__arr {
@@ -26,9 +30,10 @@
       justify-content: center;
       //top: 1%;
       //left: 42%;
-      font-size: 6rem;
+      font-size: 5rem;
       color: aliceblue;
-
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
     }
 }
 .me{
@@ -38,5 +43,190 @@
     letter-spacing: 3px;
     color: #f0f8ff;
     text-align: center;
-    padding-top: 2.3em;
+    padding-top: 0;
+    animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
 }
+.card{
+    position: relative;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    width: 70%;
+    height: 60%;
+   //background: aliceblue radial-gradient(#c38890 0px,#c38890 7px,transparent 7px);
+   backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 10px dashed rgba(255, 255, 255, 0.1);
+    //border-radius: 100px;
+    box-shadow: 10px 10px 2px rgb(0 0 0 / 10%);
+    //box-shadow: 0 0 0 10px aliceblue;
+    border-radius: 2%;
+    animation: fadeInUp 2s 2s;
+    animation-fill-mode: forwards;
+
+    &_contact-form{
+        width: 49%;
+        height: 100%;
+        margin-top: 1%;
+        margin-left: 1%;
+        //z-index: 1;
+        
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        
+    }
+    li{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        opacity: 0;
+        overflow: hidden;
+        display: block;
+        clear: both;
+        position: relative;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+        
+
+    }
+    .half{
+        width: 49%;
+        margin-top: 2%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+
+        &:first-child {
+        margin-left: 0;
+        }
+    }
+   
+    
+
+    input[type='text'],
+    input[type='email'] {
+        width: 100%;
+        border: 0;
+        background-color: transparent;
+        height: 4.5rem;
+        font-size: 16px;
+        color: #f0f8ff;
+        padding: 0 20px;
+        box-sizing: border-box;
+        border: 2px solid #f0f8ff;
+        font-family: 'Comfortaa','Poppins', Arial, sans-serif;
+        border-radius: 6px;
+    }
+    textarea{
+        width: 100%;
+        //border: 0;
+        background-color: transparent;
+        //background-color: rgba(220, 135, 135, 0.849);
+        //height: 100px;
+        font-size: 16px;
+        //color: #c38890;
+        padding: 20px;
+        min-height:  20rem;
+        box-sizing: border-box;
+        border: 2px solid #f0f8ff;
+        resize: none;
+        font-family: 'Comfortaa','Poppins', Arial, sans-serif;
+        color: #f0f8ff;
+        border-radius: 6px;
+    }
+    .flat-button{
+        color:aliceblue;
+        background: 0 0;
+        font-size: 2rem;
+        padding: 15px 20px;
+        border: 2px solid #f0f8ff;
+        float: right;
+        border-radius: 4px;
+
+        //margin-top: 0.5rem;
+        margin-right: 1.5rem;
+        font-family: 'Silkscreen','Poppins', Arial, sans-serif ;
+        
+        font-weight: 400;
+        letter-spacing: 2px;
+        white-space: nowrap;
+        animation-iteration-count: 2;
+        text-decoration: none;
+
+        &:hover{
+            background: #f0f8ff;
+            color: #c38890;
+            animation: rubberBand 1s forwards;
+            
+
+        }
+        }
+
+        &_pic{
+            width: 50%;
+            height: 95%;
+            margin-top: 1%;
+            margin-left: 1%;
+            border-left: 5px dashed rgba(255, 255, 255, 0.1);
+        }
+
+        .postal{
+            position: relative;
+            display: flex;
+            align-items:flex-start;
+            justify-content: center;
+            left: 75%;
+            width: 8rem;
+            height: 8rem;
+            border: dotted 8px aliceblue;
+            //background: aliceblue radial-gradient(#c38890 0px,#c38890 6px,transparent 6px);
+            background-size: 18px 18px;
+            background-position: -5px;
+            //border: 10px dashed rgba(255, 255, 255, 0.1);
+            //border-radius: 100px;
+            box-shadow: 5px 5px 1px rgb(0 0 0 / 10%);
+            //box-shadow: 0 0 0 10px aliceblue;
+            //border-radius: 2%;
+        }
+
+        .postal::before{
+            content: '';
+            position: absolute;
+            inset: 5px;
+            background-color: #f0f8ff;
+            background-image: url(../../images/logo2.png);
+            background-size: cover;
+            //border: 10px outset rgba(255, 255, 255, 0.1);
+            //border-radius: 100px;
+            //box-shadow: 10px 10px 2px rgb(0 0 0 / 10%);
+            box-shadow: 0 0 0 10px aliceblue;
+        }
+}
+
+
+/*.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 17px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 10px outset rgba(255, 255, 255, 0.1);
+    //border-radius: 100px;
+    box-shadow: 10px 10px 2px rgb(0 0 0 / 10%);
+    //box-shadow: 0 0 0 10px aliceblue;
+    border-radius: 2%;
+}*/
+.clear-button {
+        backdrop-filter: blur(3px);
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        //border-radius: 100px;
+        box-shadow: 2px 2px 2px rgb(0 0 0 / 10%);
+        cursor: pointer;
+    }

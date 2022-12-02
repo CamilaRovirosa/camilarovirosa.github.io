@@ -39,7 +39,7 @@ const Banner =() =>{
                 <img src={Nubes3} alt='nubes salmon'className="layer" style={{transform:`translate(${offsetY *0.5}px, ${offsetY *0.8}px)`}}></img>
                
                 <img src={Casa}  sizes="50%" alt='casa y arbustos' className="layer" style={{transform:`translate(0, ${offsetY *0.8}px)`}}></img>
-                <img src={Piso} alt='pasto' className="layer"  style={{transform:`translate(0, ${offsetY *0.2}px)`}}></img>
+                <img src={Piso} alt='pasto' className="layer"  style={{transform:`translate(0, ${offsetY *0.05}px)`}}></img>
                 <img src={Luz} alt='luz'className="layer layer_b8"  style={{transform:`translate(0, ${offsetY *0.8}px)`} }></img>
 
                {/*} <div className="layer layer-bg"></div>

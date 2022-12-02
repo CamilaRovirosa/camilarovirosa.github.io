@@ -13,29 +13,129 @@
     //padding: 1em;
   
     display: flex;
-   flex-direction: column;
+
   }
-  .title{
-    align-content: center;
+ 
+
+#dashboard-container {
+ 
+ padding: 0 2em;
+  margin: 5% auto;
+  width: 95%;
+  height: 80%;
+  border: 1px solid #f0f8ff;
+  /*  justify-content: center;
     align-items: center;
-    
-    //padding: 10em 0;
-    &__arr {
+    display: grid;*/
+  
+    .title{
       position: relative;
       justify-content: center;
-      //top: 1%;
-      //left: 42%;
-      font-size: 6rem;
-      color: aliceblue;
-
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+      //padding: 10em 0;
+      &__arr {
+        position: relative;
+        justify-content: center;
+        //top: 1%;
+        //left: 42%;
+        font-size: 6rem;
+        color: aliceblue;
+    
+      }
+      
     }
-}
+
+
 .me{
-    font-family: 'Joystix','Comfortaa','Poppins', Arial, sans-serif;
-    font-size: 3rem;
-    font-weight:600;
-    letter-spacing: 3px;
-    color: #f0f8ff;
-    text-align: center;
-    padding-top: 2.3em;
+
+  font-family: 'Joystix','Comfortaa','Poppins', Arial, sans-serif;
+  font-size: 3rem;
+  font-weight:600;
+  letter-spacing: 3px;
+  color: #f0f8ff;
+  text-align: center;
+  
+  //padding-top: 2.3em;
+}
+ /* .me:before,
+.me:after {
+  background-color: #f0f8ff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.me:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.me:after {
+  left: 0.5em;
+  margin-right: -50%;
+}*/
+fieldset{
+  border: 5px dashed #f0f8ff; 
+align-self: center;
+  box-sizing: border-box; 
+  grid-area: 1 / 1; 
+  /*padding-bottom: 22rem;
+  padding-right: 50rem;
+  padding-left: 50rem;*/
+  height: 100%;
+  width: 100%; 
+}
+.gridBox{
+  display: grid;
+  margin-top: 2rem;
+  /*grid-template-columns: 
+      repeat(auto-fit, minmax(50rem, 1fr));
+  gap: 0.125rem;*/
+}
+.column {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .column {
+    flex: 1;
+  }
+  ._25 {
+    flex: 2.5;
+  }
+  ._5 {
+    flex: 5;
+  }
+}
+
+.column {
+  padding: 15px;
+  border: 1px solid #666;
+  margin: 5px 0;
+  background: #343436;
+}
+.item {
+  margin: 1em;
+  padding:5em 0;
+  color: #fff;
+  background: #ffbb00;
+  font-weight: bold;
+  line-height: 1em;
+  border: solid 1px transparent;
+  border-radius: 0.25em;
+}
+#controller{
+  scale: 0.5;
+}
 }
