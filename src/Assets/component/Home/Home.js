@@ -33,7 +33,7 @@ const Home = ()=> {
     return (
         
         <div name="home" className="home-page">
-         <Loader/>
+         
             <div className="text-zone" id="txt" style={{transform:`translate(0, ${offsetY *1}px)`} } >
                 <h1 className="h1"> 
                     <AnimatedLettes letterClass={letterClass}

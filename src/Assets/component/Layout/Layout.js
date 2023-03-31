@@ -8,19 +8,15 @@ import Skills from "../Skills/Skills.js";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
 import Loader from "../loader/Loader"
+import work from '../../images/WorkPortrait.png';
 const Layout = ()=>{
     return(
-        <div className="App">    
-                 
-                <NavBar/>
-            <div className="page">
-                <Outlet/>
-               
-                   
-
-            </div>
-        </div>
         
+          <div className="pic">
+        <img src={work}></img>
+            ¡¡¡Hola
+          </div>
+
     );
 }
 export default Layout;

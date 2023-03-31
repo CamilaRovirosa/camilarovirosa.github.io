@@ -9,7 +9,7 @@ import { GiSkeletonKey} from "react-icons/gi"
 import Controller from "./control/controller"
 const Skills =() =>{
     return(
-        <section > 
+        <section name="skills" className='skills'> 
             <div id="dashboard-container">    
                 <div className='title'>
                     <h2 className="me">Mis Habilidades</h2>
@@ -31,11 +31,11 @@ const Skills =() =>{
                         <i></i> 
                     </div>
                     <div className="controller" id="controller"> <Controller/></div>
-                    <div className="m1">Lorem Ipsum</div>
-                    <div className="m2">Lorem Ipsum</div>
-                    <div className="m3">Lorem Ipsum</div>
-                    <div className="m4">Lorem Ipsum</div>
-                    <div className="m5">Lorem Ipsum</div>
+                    <div className="m1">Dedicada </div>
+                    <div className="m2">Adaptable</div>
+                    <div className="m3">Organizada</div>
+                    <div className="m4">Creativa</div>
+                    <div className="m5">Colaboradora con equipos</div>
                 </div>
                 <div className="items">
                     <div className="items-title ribbon">Items

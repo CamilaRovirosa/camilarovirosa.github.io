@@ -22,29 +22,29 @@ const AboutMe =() =>{
          image2: core ,
          title: "¡¡¡Hola!!!",
          icon: <GiThink/>,
-         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+         description: " Bienvenidos a mi portafolio soy Camila Rovirosa una desarrolladora entusiasta y trabajadora en busca de nuevas oportunidad que me permitan aprender y explorar diferentes proyectos. Ya sea que hayas caído aquí por accidente o me hayas encontrado en alguna aplicación espero te des el tiempo para pasear por esta pequeña página. ",
          style: "cuadro",
          style1: "img2 img-scaleC",
         },
         {id: 2,
-            name:'skills',
+            name:'hobbies',
             image: circulo,
             image2: love ,
             style: "circulo",
             style1: "img1 img-scale",
         title: "Mis Hobbies" ,
         icon: <GiAxolotl/>,
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description: "En mi tiempo libre disfruto distintos hobbies, entre ellos me encantan los videojuegos, mis favoritos son Final Fantasy XIII, The Legend of Zelda Twilight Princess y actualmente soy fan de Tetris 99, también me encantan las peliculas de accion como John Wick y Godzilla. También pasó el tiempo aprendiendo dibujo y animación para mis proyectos personales. Hace dos años empecé un pequeño huerto y verlo crecer poco a poco me ha dado mucha felicidad y orgullo.",
         },
         {id: 3,
-            name:'tool',
+            name:'work',
             image: verde,
             image2: work ,
             style: "verde",
             style1: "img3 img-scaleV",
         title: "Estilo de Trabajo",
         icon: <GiBrain/>,
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description: "Soy ingeniera en tecnologías computacionales graduada del Tecnológico de Monterrey en la ciudad de México. Mi método de trabajo es dinámico con mucho esfuerzo en trabajar con equipos y mantener el código  limpio y organizado. Siempre estoy dispuesta a aprender y mejorar mis habilidades para facilitar el progreso. Actualmente tengo experiencia usando React, Java Script , Unity, C# y Aseprite. Siempre estoy buscando aprender algo por lo que sigo tomando cursos de UX/UI, desarrollo web y diseño de videojuegos.",
         },
     ];
 
@@ -85,7 +85,7 @@ const AboutMe =() =>{
                 ))}*/}
                     
             </div>
-            <div className='slider slider' >  
+            <div className='slider ' >  
                 <div className='slider__item'>
                                      
                     <div className='slider__pic'>
@@ -112,7 +112,9 @@ const AboutMe =() =>{
                     </div>  
                     
                 </div>
+                
             </div >
+         
             {/*<div className='slider'>  
                <div className='slider__item'>                 
                     <div className='slider__pic'>
