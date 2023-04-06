@@ -57,7 +57,12 @@ const Contact = ()=> {
                     </div>
                     <div className="card_pic">
                         <div className="postal"></div>
-                        <div className="pc"></div>
+                        <div className="pc">
+                        {/* create an svg container with width and height */}
+                            
+
+
+                        </div>
 
                     </div>
 

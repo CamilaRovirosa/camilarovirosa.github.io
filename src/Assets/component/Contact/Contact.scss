@@ -32,8 +32,8 @@
       //left: 42%;
       font-size: 5rem;
       color: aliceblue;
-      animation: fadeInUp 2s 2s;
-      animation-fill-mode: forwards;
+      //animation: fadeInUp 2s 2s;
+     //animation-fill-mode: forwards;
     }
 }
 .me{
@@ -44,8 +44,8 @@
     color: #f0f8ff;
     text-align: center;
     padding-top: 0;
-    animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
+    //animation: fadeInUp 2s 2s;
+        //animation-fill-mode: forwards;
 }
 .card{
     position: relative;
@@ -230,3 +230,8 @@
         box-shadow: 2px 2px 2px rgb(0 0 0 / 10%);
         cursor: pointer;
     }
+#cat {
+        fill: black;
+        stroke: white;
+        stroke-width: 4px;
+      }

@@ -274,7 +274,15 @@
     background-color: #aebecb;
     width: 90%;
     height: 10px;
+    position: relative;
+    border-radius: 20px;
   }
+  .sk-percent{
+    position: relative;
+    right: 0px;
+    font-size: 1.1em;
+  }
+
   #unity{
     color: rgb(13, 19, 44);
   }

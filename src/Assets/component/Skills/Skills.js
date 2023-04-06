@@ -7,7 +7,10 @@ import { SiUnity, SiReact, SiMongodb} from "react-icons/si"
 import { BsGithub, BsMicrosoft} from "react-icons/bs"
 import { GiSkeletonKey} from "react-icons/gi"
 import Controller from "./control/controller"
+import Progress from "./Progress";
 const Skills =() =>{
+    
+
     return(
         <section name="skills" className='skills'> 
             <div id="dashboard-container">    
@@ -46,50 +49,90 @@ const Skills =() =>{
                     </div>
                     <div className="d1">
                         <div className="sk-ico" id="unity"><SiUnity/></div>
-                        <div className="sk-tl">Unity
-                            <div className="sk-bar"> </div>
+                        <div className="sk-tl">Unity 
+                            <span className="sk-percent">70%</span>
+                            <div className="sk-bar" >
+                                
+                                    <Progress  done="70" />
+                                
+                            </div>
                         </div>
                     </div>
                     <div className="d2">
                         <div className="sk-ico" id="react" ><SiReact/></div>
                         <div className="sk-tl">React Native
-                            <div className="sk-bar"> </div>
+                            <span className="sk-percent">70%</span>
+                            <div className="sk-bar" >
+                                
+                                    <Progress  done="70" />
+                                
+                            </div>
                         </div>
                     </div>
                     <div className="d3">
                         <div className="sk-ico" id="git"><BsGithub/></div>
                         <div className="sk-tl">Git
-                            <div className="sk-bar"> </div>
+                            <span className="sk-percent">70%</span>
+                            <div className="sk-bar" >
+                                
+                                    <Progress  done="70" />
+                                
+                            </div>
                         </div>
                     </div> 
                     <div className="d6">
                         <div className="sk-ico" id="micro"><BsMicrosoft/></div>
-                        <div className="sk-tl">Microsoft Office
-                            <div className="sk-bar"> </div>
+                        <div className="sk-tl">Microsoft 
+                            <span className="sk-percent">70%</span>
+                            <div className="sk-bar" >
+                                
+                                    <Progress  done="70" />
+                                
+                            </div>
                         </div>
                     </div>
                     <div className="d5">
                         <div className="sk-ico" id="mongo"><SiMongodb/></div>
                         <div className="sk-tl">Mongo
-                            <div className="sk-bar"> </div>
+                            <span className="sk-percent">70%</span>
+                            <div className="sk-bar" >
+                                
+                                    <Progress  done="70" />
+                                
+                            </div>
                         </div>
                     </div>
                     <div className="d4">
                         <div className="sk-ico" id="node"><FaNode/></div>
                         <div className="sk-tl">Node
-                            <div className="sk-bar"> </div>
+                            <span className="sk-percent">70%</span>
+                            <div className="sk-bar" >
+                                
+                                    <Progress  done="70" />
+                                
+                            </div>
                         </div>
                     </div>
                     <div className="d7">
                     <div className="sk-ico" id="bomb"><FaBomb/></div>
                         <div className="sk-tl">Bombs
-                            <div className="sk-bar"> </div>
+                            <span className="sk-percent">70%</span>
+                            <div className="sk-bar" >
+                                
+                                    <Progress  done="70" />
+                                
+                            </div>
                         </div>
                     </div>
                     <div className="d8">
                         <div className="sk-ico" id="key"><GiSkeletonKey/></div>
                         <div className="sk-tl">Skull Key
-                            <div className="sk-bar"> </div>
+                            <span className="sk-percent">70%</span>
+                            <div className="sk-bar" >
+                                
+                                    <Progress  done="70" />
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
