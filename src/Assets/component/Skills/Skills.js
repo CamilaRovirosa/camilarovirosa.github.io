@@ -1,9 +1,9 @@
 import React from "react";
 import './Skills.scss';
-import { MdHandyman, MdSmartToy} from "react-icons/md";
+import { MdHandyman, MdSmartToy, MdOutlineWeb} from "react-icons/md";
 import { IoMdHand} from "react-icons/io";
-import { FaNode, FaBomb} from "react-icons/fa";
-import { SiUnity, SiReact, SiMongodb} from "react-icons/si"
+import {  FaBomb} from "react-icons/fa";
+import { SiUnity, SiReact, SiAseprite} from "react-icons/si"
 import { BsGithub, BsMicrosoft} from "react-icons/bs"
 import { GiSkeletonKey} from "react-icons/gi"
 import Controller from "./control/controller"
@@ -26,20 +26,7 @@ const Skills =() =>{
                 </div> 
                 <div className="manual-container">
                                     
-                <div className="sideB">
-                    <div className="abs-title ribbon">Abilities
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i> 
-                    </div>
-                    <div className="controller" id="controller"> <Controller/></div>
-                    <div className="m1">Dedicada </div>
-                    <div className="m2">Adaptable</div>
-                    <div className="m3">Organizada</div>
-                    <div className="m4">Creativa</div>
-                    <div className="m5">Colaboradora con equipos</div>
-                </div>
+                
                 <div className="items">
                     <div className="items-title ribbon">Items
                         <i></i>
@@ -50,10 +37,10 @@ const Skills =() =>{
                     <div className="d1">
                         <div className="sk-ico" id="unity"><SiUnity/></div>
                         <div className="sk-tl">Unity 
-                            <span className="sk-percent">70%</span>
+                            <span className="sk-percent"> 30%</span>
                             <div className="sk-bar" >
                                 
-                                    <Progress  done="70" />
+                                    <Progress  done="30" />
                                 
                             </div>
                         </div>
@@ -61,10 +48,10 @@ const Skills =() =>{
                     <div className="d2">
                         <div className="sk-ico" id="react" ><SiReact/></div>
                         <div className="sk-tl">React Native
-                            <span className="sk-percent">70%</span>
+                            <span className="sk-percent">50%</span>
                             <div className="sk-bar" >
                                 
-                                    <Progress  done="70" />
+                                    <Progress  done="50" />
                                 
                             </div>
                         </div>
@@ -72,10 +59,10 @@ const Skills =() =>{
                     <div className="d3">
                         <div className="sk-ico" id="git"><BsGithub/></div>
                         <div className="sk-tl">Git
-                            <span className="sk-percent">70%</span>
+                            <span className="sk-percent"> 40%</span>
                             <div className="sk-bar" >
                                 
-                                    <Progress  done="70" />
+                                    <Progress  done="40" />
                                 
                             </div>
                         </div>
@@ -83,7 +70,7 @@ const Skills =() =>{
                     <div className="d6">
                         <div className="sk-ico" id="micro"><BsMicrosoft/></div>
                         <div className="sk-tl">Microsoft 
-                            <span className="sk-percent">70%</span>
+                            <span className="sk-percent"> 70%</span>
                             <div className="sk-bar" >
                                 
                                     <Progress  done="70" />
@@ -92,20 +79,20 @@ const Skills =() =>{
                         </div>
                     </div>
                     <div className="d5">
-                        <div className="sk-ico" id="mongo"><SiMongodb/></div>
-                        <div className="sk-tl">Mongo
-                            <span className="sk-percent">70%</span>
+                        <div className="sk-ico" id="mongo"><MdOutlineWeb/></div>
+                        <div className="sk-tl">HTML5 & CSS
+                            <span className="sk-percent"> 60%</span>
                             <div className="sk-bar" >
                                 
-                                    <Progress  done="70" />
+                                    <Progress  done="40" />
                                 
                             </div>
                         </div>
                     </div>
                     <div className="d4">
-                        <div className="sk-ico" id="node"><FaNode/></div>
-                        <div className="sk-tl">Node
-                            <span className="sk-percent">70%</span>
+                        <div className="sk-ico" id="aseprite"><SiAseprite/></div>
+                        <div className="sk-tl">Aseprite
+                            <span className="sk-percent"> 70%</span>
                             <div className="sk-bar" >
                                 
                                     <Progress  done="70" />
@@ -116,10 +103,10 @@ const Skills =() =>{
                     <div className="d7">
                     <div className="sk-ico" id="bomb"><FaBomb/></div>
                         <div className="sk-tl">Bombs
-                            <span className="sk-percent">70%</span>
+                            
                             <div className="sk-bar" >
                                 
-                                    <Progress  done="70" />
+                                    <Progress  done="100" />
                                 
                             </div>
                         </div>
@@ -127,14 +114,37 @@ const Skills =() =>{
                     <div className="d8">
                         <div className="sk-ico" id="key"><GiSkeletonKey/></div>
                         <div className="sk-tl">Skull Key
-                            <span className="sk-percent">70%</span>
+                            
                             <div className="sk-bar" >
                                 
-                                    <Progress  done="70" />
+                                    <Progress  done="100" />
                                 
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="tools">
+                    <div className="abs-title ribbon">Abilities
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i> 
+                    </div>
+                    <div className="controller" id="controller"> <Controller/></div>
+                    <div className="m1">
+                        <div className="tools-color" id="r"></div>
+                        <div className="tool-tl"> Dedicada</div> 
+
+                    </div>
+                    <div className="m2">
+                    <div className="tools-color" id="y"></div>
+                    Adaptable</div>
+                    <div className="m3">
+                    <div className="tools-color" id="g"></div>Organizada</div>
+                    <div className="m4">
+                    <div className="tools-color" id="b"></div>
+                        Creativa</div>
+                    <div className="m5">Colaboradora con equipos</div>
                 </div>
                 </div>      
             </div>

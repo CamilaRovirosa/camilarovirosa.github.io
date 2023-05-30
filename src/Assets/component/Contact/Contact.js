@@ -49,9 +49,9 @@ const Contact = ()=> {
                                 <li  id="card_li" >
                                     <textarea placeholder="Message" name="message" required></textarea>
                                 </li>
-                                <li  id="card_li" >
+                                {/*<li  id="card_li" >
                                     <input type="submit" className="flat-button" value='ENVIAR'></input>
-                                </li>
+                                </li>*/}
                             </ul>
                         </form>
                     </div>
@@ -59,7 +59,7 @@ const Contact = ()=> {
                         <div className="postal"></div>
                         <div className="pc">
                         {/* create an svg container with width and height */}
-                            
+                            <input type="submit" className="flat-button" value='ENVIAR'></input>
 
 
                         </div>

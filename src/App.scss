@@ -53,9 +53,10 @@ src: url(./Assets/fonts/3D-Thirteen-Pixel-Fonts.ttf) format('truetype');
     scroll-padding-top: 75px;
     //background-color: #2f3b55;
     //background-color: $bg-black;
-    background-color: #404555;
-    background-image: radial-gradient(#e1e6dd 0.5px, #404555 0.5px);
-    background-size: 10px 10px;
+    //background-color: #404555;
+    //background-image: radial-gradient(#e1e6dd 0.5px, #404555 0.5px);
+    background: linear-gradient(#cbccbe 25%, #7ca1c0d1 43%, #c38890 100%);
+    //background-size: 10px 10px;
     
   }  
   /*

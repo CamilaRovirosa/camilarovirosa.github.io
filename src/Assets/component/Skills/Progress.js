@@ -1,5 +1,5 @@
 import React  from "react";
-import "./progress.scss"
+import "./Progress.scss"
 
 const Progress = ({done}) =>{
  
@@ -14,7 +14,7 @@ const Progress = ({done}) =>{
     }, 200);
         return(
            
-                <div className="sk-progress-done" 
+                <div className="sk-progress-done " 
                 style={
                     style
                 }> 
