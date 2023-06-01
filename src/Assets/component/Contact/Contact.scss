@@ -21,7 +21,7 @@
 .title{
     align-content: center;
     align-items: center;
-   
+    animation: fadeInUp 1s 1s;
     animation-fill-mode: forwards;
     
     //padding: 10em 0;
@@ -32,8 +32,8 @@
       //left: 42%;
       font-size: 5rem;
       color: aliceblue;
-      //animation: fadeInUp 2s 2s;
-     //animation-fill-mode: forwards;
+      animation: fadeInUp 1s 1s;
+     animation-fill-mode: forwards;
     }
 }
 .me{

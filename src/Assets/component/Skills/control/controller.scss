@@ -1,9 +1,8 @@
 .box{
+    position: relative;
+    display: block;
+   
     
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     
     /*border:5px #2d5f91 solid;*/
 }
@@ -12,7 +11,7 @@
     height: 180px;
     background-color: #2d5f91;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;

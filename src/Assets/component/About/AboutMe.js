@@ -34,7 +34,7 @@ const AboutMe =() =>{
             style1: "img1 img-scale",
         title: "Mis Hobbies" ,
         icon: <GiAxolotl/>,
-        description: "En mi tiempo libre disfruto distintos hobbies, entre ellos me encantan los videojuegos, mis favoritos son Final Fantasy XIII, The Legend of Zelda Twilight Princess y actualmente soy fan de Tetris 99, también me encantan las peliculas de accion como John Wick y Godzilla. También pasó el tiempo aprendiendo dibujo y animación para mis proyectos personales. Hace dos años empecé un pequeño huerto y verlo crecer poco a poco me ha dado mucha felicidad y orgullo.",
+        description: "En mi tiempo libre disfruto distintos hobbies, entre ellos me encantan los videojuegos, mis favoritos son Final Fantasy XIII, The Legend of Zelda Twilight Princess y actualmente soy fan de Tetris 99, también me encantan las peliculas de accion como John Wick y Godzilla. Paso el tiempo aprendiendo dibujo y animación para mis proyectos personales. Hace dos años empecé un pequeño huerto y verlo crecer poco a poco me ha dado mucha felicidad y orgullo.",
         },
         {id: 3,
             name:'work',
