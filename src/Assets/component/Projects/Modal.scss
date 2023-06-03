@@ -1,0 +1,103 @@
+.overlay{
+    z-index: 3;
+    position: absolute;
+    bottom: 0px;
+    left: -110px;
+    
+    width: 100vw;
+    height: 70vh;
+
+    //background-color: rgba(0,0,0,0.8);
+}
+.modal-container{
+    position: absolute;
+    background-color:#ac9dad;
+    display: flex;
+    top: 35%;
+    left: 5%;
+    width: 91%;
+    height: 63%;
+    -webkit-box-shadow: 1px 14px 53px 10px rgba(0,0,0,0.69);
+    -moz-box-shadow: 1px 14px 53px 10px rgba(0,0,0,0.69);
+    box-shadow: 1px 14px 53px 10px rgba(0,0,0,0.69);
+}
+.modal-poster{
+    width: 400px;
+    object-fit: cover;
+    
+  }
+.modal-right{
+    width: 100%;
+   
+    
+}
+.closebtn{
+    position: relative;
+    font-size: 5rem;
+    top: 2%;
+    left: 90%;
+    color: aliceblue;
+}
+.modal-content{
+    display: flex;
+    position: relative;
+    bottom: 2rem;
+    //flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    margin-left: 3rem;
+    margin-right: 4rem;
+    //background-color: antiquewhite;
+ 
+}
+.modal-title{
+    
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: aliceblue;
+    font-weight: 600;
+    font-family: 'Joystix','Comfortaa','Poppins', Arial, sans-serif;
+    align-self: start;
+    //margin-left: 1rem;
+  }
+
+.modal-desc{
+    
+    color: aliceblue;
+    font-size: 1.5rem;
+    //padding: 1rem, 2rem;
+    //align-self: center;
+    margin-top: 1rem;
+    text-align: justify;
+  }
+
+.modal-links{
+    position: relative;
+    width: 100%;
+    //margin: 1rem;
+    color: aliceblue;
+    font-size: 4rem;
+    margin-left:21rem;
+    color: aliceblue;
+    bottom: 1.5rem;
+}
+.link{
+    margin-right: 1rem;
+}
+.modal-images{
+    display: flex;
+    position: relative;
+    width: 100%;
+    bottom: 2rem;
+    justify-content: center;
+    //background-color: aquamarine;
+}
+.modal-img{
+    background-color: aqua;
+    border: 5px solid black;
+    width: 12rem;
+    height: 12rem;
+    margin-right: 0.2rem;
+}
