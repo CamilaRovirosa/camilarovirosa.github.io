@@ -1,25 +1,26 @@
 .overlay{
     z-index: 3;
     position: absolute;
-    bottom: 0px;
-    left: -110px;
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100vw;
-    height: 70vh;
-
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
     //background-color: rgba(0,0,0,0.8);
 }
 .modal-container{
-    position: absolute;
+    position: relative;
     background-color:#ac9dad;
     display: flex;
-    top: 35%;
-    left: 5%;
-    width: 91%;
-    height: 63%;
-    -webkit-box-shadow: 1px 14px 53px 10px rgba(0,0,0,0.69);
-    -moz-box-shadow: 1px 14px 53px 10px rgba(0,0,0,0.69);
-    box-shadow: 1px 14px 53px 10px rgba(0,0,0,0.69);
+    top: 23%;
+    left:10%;
+    width: 80%;
+    height: 53%;
+    -webkit-box-shadow: 1px 5px 20px 5px rgba(37, 37, 38, 0.519);
+    -moz-box-shadow: 1px 5px 20px 5px rgba(37, 37, 38, 0.519);
+    box-shadow: 1px 5px 20px 5px rgba(37, 37, 38, 0.519);
 }
 .modal-poster{
     width: 400px;
@@ -85,7 +86,43 @@
 }
 .link{
     margin-right: 1rem;
+    position: relative;
+    display: inline-block;
 }
+.link .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(37, 34, 65);
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -80px;
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+
+.link .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(37, 34, 65) transparent transparent transparent;
+}
+
+.link:hover .popuptext {
+    visibility: visible;
+    opacity: 1;
+}
+
 .modal-images{
     display: flex;
     position: relative;
@@ -94,10 +131,16 @@
     justify-content: center;
     //background-color: aquamarine;
 }
-.modal-img{
-    background-color: aqua;
-    border: 5px solid black;
+.modal-img img{
+    //background-color: aqua;
+    border: 2px solid black;
+    align-items: center;
     width: 12rem;
-    height: 12rem;
+    height: 11rem;
     margin-right: 0.2rem;
+    
+}
+modal-minimg img{
+    object-fit: cover;
+    
 }

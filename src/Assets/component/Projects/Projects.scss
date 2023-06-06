@@ -10,7 +10,7 @@
     //color: red;
     //background-color: #8db49a;
     //position: relative;
-    //padding: 1em;
+    padding-bottom: 20rem;
   
     display: flex;
     
@@ -54,17 +54,19 @@
   .top3{
     position: relative;
     display: flex;
-    //flex-direction: row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     //border: solid 5px black;
     width: 100%;
+    animation: fadeInUp 2s 1s;
+     animation-fill-mode: forwards;
     &-project{
       cursor: pointer;
       padding: 1rem;
     }
     &-poster{
-      width: 400px;
+      width: 350px;
       align-self: center;
       margin-bottom: 6px;
       margin-top: 4px;
@@ -81,18 +83,11 @@
       font-family: 'Joystix','Comfortaa','Poppins', Arial, sans-serif;
     }
     &-info{
+      width: 90%;
       color: aliceblue;
       font-size: 1.5rem;
       opacity: 0.8;
+      overflow-wrap: break-word;
     }
-    /*&-desc{
-      display: none;
-      color: aliceblue;
-      font-size: 1.5rem;
-    }*/
-  }
-  .top3-change{
-    //opacity: 0;
-    display: none;
   }
 }

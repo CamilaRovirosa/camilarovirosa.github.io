@@ -64,7 +64,7 @@ const AboutMe =() =>{
 
 
     return( 
-        <section name='about' className='shape'>               
+        <section name='about' className='about'>               
             <div className='title'>
                 <h2 id="h2">Un Poco Sobre Mi</h2>
             </div>

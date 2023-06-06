@@ -1,21 +1,16 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import './Projects.scss';
 import {SiCodefactor, SiExercism} from "react-icons/si"
 import { IoGameController } from "react-icons/io5";
 import Modal from './Modal';
-import Pro1 from  './../../images/Parallax/Compressed/casa1-5_compressed.png';
+import Pro1 from  './../../images/projects/portafoli1.png';
+
 const Projects = ()=> {
     const [active, setActive]= useState(false);
-    const [projectsClass, setProjectsClass]= useState('top3-project');
-
-    useEffect (()=>{
-        if(active === true){
-            setProjectsClass('top3-change')
-        }
-    },[projectsClass, active]
-    )
+    const [ident, setId]=useState();
     return (
+
         <section name="projects" className='pro'>
             <div className="project-container">         
                 <div className='title'>
@@ -29,55 +24,51 @@ const Projects = ()=> {
                         <IoGameController />
                     </div>
                 </div>
+                
                 <div className="top3">
                 {/* //////////////proyecto 1//////////////*/}  
                     <div className="top3-project" >
-                       <span onClick={() => setActive(true)}>
+                       <span onClick={() => setActive(true) & setId(0)}>
                             <img src={Pro1}
                                 alt="Proyecto del protafolio"
                                 className="top3-poster">
                             </img>
-                            </span> 
-                        <Modal open={active} onClose={()=> setActive(false)}/> 
+                        </span> 
                         
-                        <div className="top3-title">Portafolio :)</div>
+                            <Modal open={active} onClose={()=> setActive(false)} idx={ident}/> 
+                        
+                        <div className="top3-title">Portafolio</div>
                         <div className="top3-info">
-                            <span className="top3-comment">Por que me gusto mucho como quedo este portafolio.</span>
+                            <span className="top3-comment"> este portafolio.</span>
                         </div>
                         
                     </div>
                 {/* //////////////proyecto 2//////////////*/}  
                     <div className="top3-project">
-                        <img src={Pro1}
-                            alt="Proyecto del protafolio"
-                            className="top3-poster">
-                        </img>
-                        <div className="top3-title">Portafolio :^</div>
+                        <span onClick={() => setActive(true) & setId(1)}>
+                            <img src={Pro1}
+                                alt="Proyecto del protafolio"
+                                className="top3-poster">
+                            </img>
+                        </span> 
+                        <Modal open={active} onClose={()=> setActive(false)} idx={ident}/> 
+                        <div className="top3-title">Bounce 3D</div>
                         <div className="top3-info">
-                            <span className="top3-comment">Por que me gusto mucho como quedo este portafolio.</span>
-                        </div>
-                        <div className="top3-desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Mauris commodo nisi eu magna maximus, eget rhoncus diam dictum. 
-                            Aenean vulputate commodo fringilla. 
-                            Suspendisse tortor magna, bibendum nec lobortis in, consectetur id magna. Nam ut dolor at sapien blandit semper eu ac ipsum. Sed nec tempor massa, vel sodales ipsum. Proin tristique sapien eu odio finibus, nec suscipit turpis ornare. Proin euismod cursus magna, ut semper diam eleifend non. Phasellus cursus massa arcu, sit amet rutrum magna ullamcorper sed. 
+                            <span className="top3-comment">Proyecto de la universidad</span>
                         </div>
                     </div>
                 {/* //////////////proyecto 3//////////////*/}
                     <div className="top3-project">
-                        <img src={Pro1}
-                            alt="Proyecto del protafolio"
-                            className="top3-poster">
-                        </img>
-                        <div className="top3-title">Portafolio :^</div>
+                        <span onClick={() => setActive(true) & setId(2)}>
+                            <img src={Pro1}
+                                alt="Proyecto del protafolio"
+                                className="top3-poster">
+                            </img>
+                        </span> 
+                        <Modal open={active} onClose={()=> setActive(false)} idx={ident}/> 
+                        <div className="top3-title">The Cat</div>
                         <div className="top3-info">
-                            <span className="top3-comment">Por que me gusto mucho como quedo este portafolio.</span>
-                        </div>
-                        <div className="top3-desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Mauris commodo nisi eu magna maximus, eget rhoncus diam dictum. 
-                            Aenean vulputate commodo fringilla. 
-                            Suspendisse tortor magna, bibendum nec lobortis in, consectetur id magna. Nam ut dolor at sapien blandit semper eu ac ipsum. Sed nec tempor massa, vel sodales ipsum. Proin tristique sapien eu odio finibus, nec suscipit turpis ornare. Proin euismod cursus magna, ut semper diam eleifend non. Phasellus cursus massa arcu, sit amet rutrum magna ullamcorper sed. 
+                            <span className="top3-comment">un juego desarrollado por mi </span>
                         </div>
                     </div>
                 </div>
