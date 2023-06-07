@@ -1,14 +1,14 @@
 import {useEffect, useState} from 'react';
 
 import './Banner.scss';
-import AzulOscuro from './../../images/Parallax/Compressed/fondoOscuro_compressed.png'
-import Edificio from './../../images/Parallax/Compressed/edificio_compressed.png'
-import Nubes1 from './../../images/Parallax/Compressed/nubes1_compressed.png' 
-import Nubes2 from './../../images/Parallax/Compressed/nubes2_compressed.png' 
-import Nubes3 from './../../images/Parallax/Compressed/nubes3_compressed.png' 
-import Casa from './../../images/Parallax/Compressed/casaYverde.png' 
-import Piso from './../../images/Parallax/Compressed/piso_compressed.png' 
-import Luz from './../../images/Parallax/Compressed/luz_compressed.png'
+import AzulOscuro from './../../images/Parallax/fondoOscuro.svg'
+import Edificio from './../../images/Parallax/edificio.png'
+import Nubes1 from './../../images/Parallax/nubes1.svg' 
+import Nubes2 from './../../images/Parallax/nubes2.svg' 
+import Nubes3 from './../../images/Parallax/nubes3.svg' 
+import Casa from './../../images/Parallax/casaYverde.svg' 
+import Piso from './../../images/Parallax/piso.png' 
+import Luz from './../../images/Parallax/luz.svg'
 const Banner =() =>{
     
     const [offsetY, setOffsetY]= useState('layer');
