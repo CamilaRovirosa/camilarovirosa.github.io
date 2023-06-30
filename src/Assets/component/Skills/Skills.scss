@@ -22,7 +22,7 @@
   margin: 5% auto;
   width: 85%;
   height: 88%;
-  border-top: 3px solid #f0f8ff;
+  //border-top: 3px solid #f0f8ff;
     //justify-content: center;
     align-items: center;
     //display: grid;
@@ -151,8 +151,8 @@
       "sp sp"
       "controller m1"
       "controller m2"
-      "m4 m3"
-      "m5 m5";
+      "controller m3"
+      "m5 m4 ";
     grid-area: abs;
     border: #f0f8ff 4px double;
     border-radius: 3%;
@@ -178,7 +178,9 @@
   .controller { grid-area: controller; 
     display: flex;
     flex-wrap: wrap;
-    margin-right: 50%;    
+    margin-right: 50%; 
+    margin-bottom: 30%;
+    
   }
   
   .m1 { grid-area: m1; 
@@ -187,7 +189,7 @@
       flex-wrap: wrap;
       
       // justify-content: center;
-      // align-items: center;
+       align-items: center;
     }
   
   .m2 { grid-area: m2; 
@@ -195,7 +197,7 @@
     display: flex;
     flex-wrap: wrap;
     // justify-content: center;
-    // align-items: center;
+    align-items: center;
   }
   
   .m3 { grid-area: m3; 
@@ -203,7 +205,7 @@
     display: flex;
     flex-wrap: wrap;
     // justify-content: center;
-    // align-items: center;
+    align-items: center;
   }
   
   .m4 { grid-area: m4; 
@@ -211,16 +213,21 @@
     display: flex;
     flex-wrap: wrap;
     // justify-content: center;
-    // align-items: center;
+    align-items: center;
   }
   
   .m5 { grid-area: m5; 
-    border-bottom: #f0f8ff 4px dashed;
+    
+    border-top: #f0f8ff 4px dashed;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: -0.9rem;
+    //padding: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
     // justify-content: center;
-    // align-items: center;
+    align-items: center;
   }
 
     .abs-color{
@@ -240,7 +247,7 @@
       font-size: 2rem;
     }
     .abs-p{
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
     
     #r{

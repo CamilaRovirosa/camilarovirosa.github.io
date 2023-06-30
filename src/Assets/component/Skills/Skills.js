@@ -135,33 +135,28 @@ const Skills =() =>{
                     <div className="m1">
                             <div className="abs-color" id="r"></div>
                                 <div className="abs-tl"> Organizada</div> 
-                                <p className="abs-p">Es vital mantener el orden entre tareas. 
-                                    Me gusta saber lo que voy a hacer en el dia y lo que quiero lograr. </p>
+                                <p className="abs-p"> </p>
                         </div>
                         <div className="m2">
                             <div className="abs-color" id="y"></div >
                                 <div className="abs-tl"> Adaptable</div>
-                                <p className="abs-p">Me gusta trabajar con equipos y entender sus roles para poder yo
-                                 posisionarme donde mejor pueda ayudar.
+                                <p className="abs-p">
                                     </p>
                         </div>
                         <div className="m3">
                             <div className="abs-color" id="g"></div>
                                 <div className="abs-tl">Proactiva</div>
-                                <p className="abs-p">Si no entiendo algo prefiero investigar y hacer preguntas para 
-                            ir aprendiendo nuevas habiliddades conforme sea necesario.</p>
+                                <p className="abs-p"></p>
                         </div>
                         <div className="m4">
                             <div className="abs-color" id="b"></div>
                                 <div className="abs-tl">Creativa</div>
-                                <p className="abs-p"> Me gusta encontrar mas formas para hacer las tareas mas claras y emocionantes.
-                                Siembre buscor diferentes soluciones o perspectivas a los problemas. </p>
+                                <p className="abs-p"> </p>
                         </div>
                         <div className="m5">
                         <div className="abs-t" ></div>
                             <div className="abs-tl" >Honesta </div>
-                            <p className="abs-p">Prefiero admitir desconozco algun tema o herramienta y empezar a hacer preguntas antes de tomar accion.
-                         Y de igual manera reconocer mis errores y aprender de ellos seguir adelante. </p>
+                            <p className="abs-p"></p>
                         </div>
                 </div>
                 </div>      

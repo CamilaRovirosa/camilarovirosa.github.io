@@ -20,7 +20,7 @@
     margin-top: 5%;
     width: 85%;
     height: 88%;
-    border-top: 3px solid #f0f8ff;
+    //border-top: 3px solid #f0f8ff;
     //justify-content: center;
     //align-items: center;
   
@@ -67,11 +67,24 @@
     }
     &-poster{
       width: 350px;
+      transform: scale(1);
       align-self: center;
       margin-bottom: 6px;
       margin-top: 4px;
-      &.active{
-        opacity: 0;
+      border-radius: 5%;
+      -webkit-box-shadow: 10px 10px 0px 0px #6e6790;
+      -moz-box-shadow: 10px 10px 0px 0px #6e6790;
+      box-shadow: 10px 10px 0px 0px #6e6790;
+      transition: transform 0.5s;
+      &-poster img{
+        object-fit: cover;  
+      }
+      &:hover{
+        transform:scale(0.95);
+        transition: transform 0.5s;
+        box-shadow: 1px 1px 0px 0px #6e6790;
+        transition: all .4s ease;
+        
       }
       
     }
@@ -81,6 +94,7 @@
       color: aliceblue;
       font-weight: 600;
       font-family: 'Joystix','Comfortaa','Poppins', Arial, sans-serif;
+      padding-left: 2.5rem;
     }
     &-info{
       width: 90%;
@@ -88,6 +102,7 @@
       font-size: 1.5rem;
       opacity: 0.8;
       overflow-wrap: break-word;
+      padding-left: 2.5rem;
     }
   }
 }

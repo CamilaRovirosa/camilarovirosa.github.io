@@ -5,6 +5,7 @@ import {SiCodefactor, SiExercism} from "react-icons/si"
 import { IoGameController } from "react-icons/io5";
 import Modal from './Modal';
 import Pro1 from  './../../images/projects/portafoli1.png';
+import Temp from './../../images/projects/progress.png'
 
 const Projects = ()=> {
     const [active, setActive]= useState(false);
@@ -46,9 +47,10 @@ const Projects = ()=> {
                 {/* //////////////proyecto 2//////////////*/}  
                     <div className="top3-project">
                         <span onClick={() => setActive(true) & setId(1)}>
-                            <img src={Pro1}
+                            <img src={Temp}
                                 alt="Proyecto del protafolio"
-                                className="top3-poster">
+                                className="top3-poster"
+                                width = "350" height = "325">
                             </img>
                         </span> 
                         <Modal open={active} onClose={()=> setActive(false)} idx={ident}/> 
@@ -60,9 +62,10 @@ const Projects = ()=> {
                 {/* //////////////proyecto 3//////////////*/}
                     <div className="top3-project">
                         <span onClick={() => setActive(true) & setId(2)}>
-                            <img src={Pro1}
+                            <img src={Temp}
                                 alt="Proyecto del protafolio"
-                                className="top3-poster">
+                                className="top3-poster"
+                                width = "350" height = "325">
                             </img>
                         </span> 
                         <Modal open={active} onClose={()=> setActive(false)} idx={ident}/> 

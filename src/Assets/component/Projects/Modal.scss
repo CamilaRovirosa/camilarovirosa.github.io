@@ -21,11 +21,14 @@
     -webkit-box-shadow: 1px 5px 20px 5px rgba(37, 37, 38, 0.519);
     -moz-box-shadow: 1px 5px 20px 5px rgba(37, 37, 38, 0.519);
     box-shadow: 1px 5px 20px 5px rgba(37, 37, 38, 0.519);
+    border-radius:  2% / 5%;
+    
 }
 .modal-poster{
     width: 400px;
     object-fit: cover;
-    
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
   }
 .modal-right{
     width: 100%;
