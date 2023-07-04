@@ -7,6 +7,7 @@ import Banner from "../Banner/Banner.js";
 import './Home.scss'
 const Home = ()=> {
     const [letterClass, setLetterClass] = useState('text-animate');
+    const[isMobile, setIsMobile]= useState(false);
     const helloArray=['H','o','l','a','  !'];
     const amArray=['S','o','y'];
     const nameArray=['C','a','m','i','l','a'];
@@ -30,11 +31,17 @@ const Home = ()=> {
             };
 
         }, []);
+
+        const handleResize = () =>{
+            if (window.innerWidth< '993px'){
+                setIsMobile(!isMobile)
+            }
+        }
     return (
         
         <div name="home" className="home-page">
          
-            <div className="text-zone" id="txt" style={{transform:`translate(0, ${offsetY *1}px)`} } >
+            <div className="text-zone" id="txt" style ={ isMobile? {transform:`translate(0, ${offsetY *1}px)`} : {transform:`none`} } >
                 <h1 className="h1"> 
                     <AnimatedLettes letterClass={letterClass}
                     strArray={helloArray}

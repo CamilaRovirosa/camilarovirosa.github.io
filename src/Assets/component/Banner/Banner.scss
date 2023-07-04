@@ -37,8 +37,8 @@
     }
     .layer {
       -webkit-background-size: cover;
-    -moz-background-size: cover; 
-    -o-background-size: cover;
+      -moz-background-size: cover; 
+      -o-background-size: cover;
       background-size: auto;
       background-repeat: no-repeat;
       width: 100%;
@@ -146,28 +146,32 @@
     .hero-mobile {
       display: none;
       background: url(./../../images/Parallax/Compressed/casa1-5_compressed.png) no-repeat center bottom / cover;
-      height: 320px;
+      height: 390px;
+      width: 100%;
+      //align-self: center;
       
       
     }
    
-   
-   @media all and (max-width: 576px) {
+    @media screen  and (max-width: 992px)  {
       .hero {
          display: none;
          //visibility: hidden;
       }
       .hero-mobile {
          display: block;
+         //height: fit-content;
       }
       .base::before{
         display: block;
         content:'';
         position: absolute;
-        top: 30rem;
+        top: 90%;
         width: 100vw;
-        height: 3vh;
-        background: linear-gradient(transparent ,#3a4866);
+        //height: 20vh;
+        background: none;
+        //background: linear-gradient(transparent ,#3a4866);
         z-index: 3;
       }
+
     }

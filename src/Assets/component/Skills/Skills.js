@@ -3,10 +3,10 @@ import './Skills.scss';
 import { MdHandyman, MdSmartToy, MdOutlineWeb} from "react-icons/md";
 import { IoMdHand} from "react-icons/io";
 import {  FaBomb} from "react-icons/fa";
-import { SiUnity, SiReact, SiAseprite} from "react-icons/si"
-import { BsGithub, BsMicrosoft} from "react-icons/bs"
-import { GiSkeletonKey} from "react-icons/gi"
-import Controller from "./control/controller"
+import { SiUnity, SiReact, SiAseprite} from "react-icons/si";
+import { BsGithub, BsMicrosoft} from "react-icons/bs";
+import { GiSkeletonKey} from "react-icons/gi";
+import Controller from "./control/controller";
 import Progress from "./Progress";
 const Skills =() =>{
     

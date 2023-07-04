@@ -13,7 +13,7 @@ const Modal = ({open, onClose, idx}) =>{
         name: 'Portafolio',
          image: Pro1,
          title: "Prortafolio",
-         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nisi eu magna maximus, eget rhoncus diam dictum. Aenean vulputate commodo fringilla. Suspendisse tortor magna, bibendum nec lobortis in, consectetur id magna. Nam ut dolor at sapien blandit semper eu ac ipsum. Sed nec tempor massa, vel sodales ipsum. Proin tristique sapien eu odio finibus, nec suscipit turpis ornare. Proin euismod cursus magna, ut semper diam eleifend non. Phasellus cursus massa arcu, sit amet rutrum magna ullamcorper sed.",
+         description: "Mi pagina web y perfil. La verdad estoy muy contenta con como quedo y por eso esta aqui. ¿Ustedes que opinan?",
          linkGit: "https://github.com/CamilaRovirosa/PortfolioWebPage" ,
          link: "proximamente" ,
          img1: Pro1,

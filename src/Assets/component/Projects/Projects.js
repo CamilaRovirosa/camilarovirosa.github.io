@@ -44,7 +44,7 @@ const Projects = ()=> {
                         </div>
                         
                     </div>
-                {/* //////////////proyecto 2//////////////*/}  
+                {/* //////////////proyecto 2////////////// 
                     <div className="top3-project">
                         <span onClick={() => setActive(true) & setId(1)}>
                             <img src={Temp}
@@ -59,7 +59,7 @@ const Projects = ()=> {
                             <span className="top3-comment">Proyecto de la universidad</span>
                         </div>
                     </div>
-                {/* //////////////proyecto 3//////////////*/}
+                {/* //////////////proyecto 3//////////////
                     <div className="top3-project">
                         <span onClick={() => setActive(true) & setId(2)}>
                             <img src={Temp}
@@ -74,6 +74,7 @@ const Projects = ()=> {
                             <span className="top3-comment">un juego desarrollado por mi </span>
                         </div>
                     </div>
+                */} 
                 </div>
             </div>
         </section>
