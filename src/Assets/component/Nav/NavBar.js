@@ -24,27 +24,27 @@ const NavBar = () =>{
                 </ul>
                 <ul className={showNav ? 'movil-show' : 'right'} >
                     <li className="nav-bar-tab">
-                        <Link  to="about" smooth={true} duration={500}  onClick={handleShowNav}>
+                        <Link  to="about" smooth={true} duration={500}  >
                             SOBRE MI                      
                         </Link>
                     </li>
                     <li className="nav-bar-tab">
-                        <Link  to="skills" smooth={true} duration={500} onClick={handleShowNav}>
+                        <Link  to="skills" smooth={true} duration={500}>
                             HABILIDADES                         
                         </Link>
                     </li>
                     <li className="nav-bar-tab">
-                        <Link  to="projects" smooth={true} duration={500}  onClick={handleShowNav}>
+                        <Link  to="projects" smooth={true} duration={500}>
                             PROYECTOS        
                         </Link>
                     </li>
                     <li className="nav-bar-tab" >
-                        <Link  to="contact" smooth={true} duration={500}  onClick={handleShowNav} >
+                        <Link  to="contact" smooth={true} duration={500}>
                             CONTACTO
                         </Link>
                     </li>
                     <li className="nav-bar-tab">
-                    <a href={CV}  target="_blank" rel="noopener noreferrer"  onClick={handleShowNav}>CV</a>
+                    <a href={CV}  target="_blank" rel="noopener noreferrer">CV</a>
 
                     </li>
                 </ul>

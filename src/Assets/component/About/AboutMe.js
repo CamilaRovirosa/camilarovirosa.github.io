@@ -64,97 +64,49 @@ const AboutMe =() =>{
 
 
     return( 
-        <section name='about' className='about'>               
-            <div className='title'>
-                <h2 id="h2">Un Poco Sobre Mi</h2>
-            </div>
-            <div className='title__arr'>
-                <GiHeartOrgan/>
-                <span> </span>
-                <IoGameController/>
-                <span> </span>
-                <FaLaptopCode/>
-               {/* {slides.map((obj, id) =>(
-                    <div 
-                    >
-                         <GiHeartOrgan  key={id} onClick={()=>goToSlide(0)}/>
-                        <IoGameController key={id} onClick={()=>goToSlide(1)}/>
-                        <FaLaptopCode key={id} onClick={()=>goToSlide(2)}/>
+        <section name='about' className='about'>  
+            <div className='about-container'>             
+                <div className='title'>
+                    <h2 id="h2">Un Poco Sobre Mi</h2>
+                </div>
+                <div className='title__arr'>
+                    <GiHeartOrgan/>
+                    <span> </span>
+                    <IoGameController/>
+                    <span> </span>
+                    <FaLaptopCode/>
                         
-                    </div>
-                ))}*/}
-                    
-            </div>
-            <div className='slider ' >  
-                <div className='slider__item'>
-                                     
-                    <div className='slider__pic'>
-                        <div className="slider__pic--holder"  onClick={nextSlide}>
-                            <img src={slides[current].image} className={slides[current].style} alt={slides[current].id}/>
-                            <img src={slides[current].image2} className={slides[current].style1} alt={slides[current].id}/>
-                        </div>                                
-                    </div>
-                    <div className="slider__content">
-                        
-                            <div className="slider__title space">{slides[current].title}
-                            <span className=" space">{slides[current].icon} </span>
-                            </div>
-                            <div className="slider__text">{slides[current].description}</div>
-                            <div className='arrow'>
+                </div>
+                <div className='slider ' >  
+                    <div className='slider__item'>
+                                        
+                        <div className='slider__pic'>
+                            <div className="slider__pic--holder"  onClick={nextSlide}>
+                                <img src={slides[current].image} className={slides[current].style} alt={slides[current].id}/>
+                                <img src={slides[current].image2} className={slides[current].style1} alt={slides[current].id}/>
+                            </div>                                
+                        </div>
+                        <div className="slider__content">
                             
-                               
-                                <TiArrowLeftOutline className='slider__content--arrow ' onClick={nextSlide}/>
+                                <div className="slider__title space">{slides[current].title}
+                                <span className=" space">{slides[current].icon} </span>
+                                </div>
+                                <div className="slider__text">{slides[current].description}</div>
+                                <div className='arrow'>
                                 
-                                <TiArrowRightOutline className='slider__content--arrow'onClick={prevSlide}/>
                                 
-                            </div>
+                                    <TiArrowLeftOutline className='slider__content--arrow ' onClick={nextSlide}/>
+                                    
+                                    <TiArrowRightOutline className='slider__content--arrow'onClick={prevSlide}/>
+                                    
+                                </div>
+                            
+                        </div>  
                         
-                    </div>  
+                    </div>
                     
-                </div>
-                
-            </div >
-         
-            {/*<div className='slider'>  
-               <div className='slider__item'>                 
-                    <div className='slider__pic'>
-                        <div className="slider__pic--holder">
-                            <img src={cuadrado} className="cuadro" alt=" cuadro azul"/>
-                            <img src={core} className="img2 img-scaleC"alt="retrato basico"/>
-                        </div>                                
-                    </div>
-                    <div className="slider__content">
-                        <div className="slider__box">
-                            <div className="slider__title">En Escencia</div>
-                            <div className="slider__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-            </div >
-            <div className='slider'>  
-                <div className='slider__item'>                 
-                    <div className='slider__pic'>
-                        <div className="slider__pic--holder">
-                            <img src={verde} className="verde" alt="cuadro verde"/>
-                            <img src={work} className="img3 img-scaleV"alt="retrato trabajadora"/>
-                        </div>                                
-                    </div>
-                    <div className="slider__content">
-                        <div className="slider__box">
-                            <div className="slider__title">En Escencia</div>
-                            <div className="slider__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                            </div>
-                        </div>
-                    </div>  
-                        </div>                              
-            </div >  */}
+                </div >
+            </div>
         </section>
     );
 }
