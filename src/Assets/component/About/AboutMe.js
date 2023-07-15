@@ -69,7 +69,7 @@ const AboutMe =() =>{
                 <div className='title'>
                     <h2 id="h2">Un Poco Sobre Mi</h2>
                 </div>
-                <div className='title__arr'>
+                <div className='title__arrA'>
                     <GiHeartOrgan/>
                     <span> </span>
                     <IoGameController/>

@@ -32,7 +32,7 @@
       flex-direction: column;
       padding-top: 2rem;
     
-    &__arr {
+    &__arrA {
       position: relative;
       justify-content: center;
       margin-left: 42%;
@@ -52,7 +52,7 @@
   }
 
   .slider:before{
-    z-index: 11;
+    z-index: 5;
     position: absolute;
     background-color: aliceblue;
       filter: blur(20px);
@@ -105,11 +105,11 @@
     .circulo{
       background-color: transparent;
       border-radius: 50%;
-      height: 300px;
+      height: 260px;
       pointer-events: none;
       position: absolute;
       bottom: 0%;
-      width: 300px;
+      width: 260px;
     }
     .img1{
       pointer-events: none;
@@ -120,7 +120,7 @@
     }
     .img-scale{
       left: 1rem;
-      width: 280px;
+      width: 240px;
     }
     &__pic:hover .img1 {
       transform: translateY(-1%) scale(1.03);
@@ -131,12 +131,12 @@
     .cuadro{
       background-color: transparent;
       transform: rotate(-10deg);
-      height: 340px;
+      height: 300px;
       left: -2rem;
       pointer-events: none;
       position: absolute;
       bottom: 0%;
-      width: 340px;
+      width: 300px;
     }
     .img2{
       pointer-events: none;
@@ -147,7 +147,7 @@
     }
     .img-scaleC{
       left: 1rem;
-      width: 230px;
+      width: 200px;
     }
     &__pic:hover .img2 {
       transform: translateY(-8%) scale(1.03);
@@ -159,10 +159,10 @@
     .verde{
       background-color: transparent;
       border-radius: 5%;
-      height: 250px;
+      height: 220px;
       pointer-events: none;
       position: absolute;
-      width: 250px;
+      width: 220px;
       transform: translateX(10%) scale(1);
     }
     .img3{
@@ -173,7 +173,7 @@
       transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .img-scaleV{
-      width: 260px;
+      width: 230px;
     }
     &__pic:hover .img3 {
       transform: translateY(-10%) scale(1.03);
@@ -211,12 +211,13 @@
       }
       .slider__title{      
         font-family:'Megrim' ,Arial, Helvetica, sans-serif;
-        font-size: 2.5rem;
-        margin-bottom: 1rem;    
+        font-size: 3rem;
+        margin-bottom: 1.1rem;    
       }
       .slider__text {
         font-family:'Poppins' ,Arial, Helvetica, sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.8em;
+        //line-height: 1;
       }
 }
 
@@ -302,32 +303,34 @@
     }
 }
 @media screen and (max-width: 576px) {
-    .title{
-      
-     // padding-top: 15rem;
-    
+  .about-container{
+    padding:0;
+    margin: 2% auto;
+    width:  100%;
+    height:70%;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    margin: 5% auto;
+  }
+    .title__arrA {
+      margin-left: 25%;
+      font-size: 4rem;
     }
     #h2{
       font-size: 2rem;
     }
     .slider{
+      width: 100%;
       height: 70%;
       margin-top: 7.2rem;
       }
       
-    /*.slider__title{
-      font-size: 0.3rem;
-      //margin-bottom: 5rem;
-    }*/
-    .slider__text {
-      font-size: 0.5rem;
-      //margin-top: 0.5rem;
-    }
     .slider__content{
-      margin-top: -17rem;
-      margin-left: auto;
-      margin-right: auto;
+      margin-top: -19rem;
       margin-bottom: 5rem;
+      font-size: 0.8rem;
     }
     .slider__pic{
       transform: translateY(-100%);
@@ -335,6 +338,9 @@
       scale: 0.5;
       align-self: center;
       
+    }
+    .slider__title{
+      font-size: 0.5rem;
     }
     .verde{
       transform: translateX(10%);
