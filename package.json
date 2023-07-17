@@ -1,7 +1,7 @@
 {
   "name": "portafolio",
   "version": "0.1.0",
-  "homepage": "https://camilarovirosa.github.io",
+  "homepage": "https://camilarovirosa.github.io/portafolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
