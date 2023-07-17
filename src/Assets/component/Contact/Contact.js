@@ -23,10 +23,10 @@ const Contact = ()=> {
     return (
         <section name="contact" className='con'>         
             
-            <div className='title'>
+            <div className='titleC'>
                     <h2 className="me">Contacto</h2>
             </div>
-                <div className='title__arr'>
+                <div className='titleC__arr'>
                     <BsFillChatTextFill/>
                     <span> </span>
                     <GrMail/>
@@ -58,7 +58,6 @@ const Contact = ()=> {
                     <div className="card_pic">
                         <div className="postal"></div>
                         <div className="pc">
-                        {/* create an svg container with width and height */}
                             <input type="submit" className="flat-button" value='ENVIAR'></input>
 
 

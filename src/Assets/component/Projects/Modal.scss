@@ -128,6 +128,7 @@
 
 .modal-images{
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
     bottom: 2rem;
@@ -146,4 +147,125 @@
 modal-minimg img{
     object-fit: cover;
     
+}
+
+//responsive----------------------------
+@media screen and (max-width: 1200px) {
+    .modal-container{
+        top: 30%;
+        left:10%;
+        width: 80%;
+        height: 55%;
+    }
+    .modal-links{
+        position: relative;
+        width: 100%;
+        margin-bottom: 1rem;
+        color: aliceblue;
+        font-size: 3.5rem;
+        margin-left:30%;
+        color: aliceblue;
+        bottom: 0rem;
+    }
+    .closebtn{
+        position: relative;
+        font-size: 3rem;
+        top: 2%;
+        left: 85%;
+        color: aliceblue;
+        z-index: 10;
+    }
+    .modal-poster{
+        width: 300px;
+        object-fit: cover;
+
+      }
+}
+
+@media screen and (max-width: 992px) {
+    .modal-container{
+        top: 18%;
+        left:10%;
+        width: 80%;
+        height: 53%;
+    }
+    .modal-poster{
+        display: none;
+        
+      }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    
+}
+@media screen and (max-width: 576px) {
+    .overlay{
+        z-index: 3;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        //background-color: rgba(0,0,0,0.8);
+        overflow: hidden;
+    }
+    .modal-container{
+        top: 5%;
+        left:10%;
+        width: 80%;
+        height: 63%;
+    }
+    .modal-content{
+        display: flex;
+        position: relative;
+        //bottom: 0rem;
+        //flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .modal-title{
+        font-size: 1.5rem;
+      }
+    
+    .modal-desc{
+        font-size: 1rem;
+        margin-top: 1rem;
+
+    }
+    .closebtn{
+        position: relative;
+        font-size: 2.5rem;
+        top: 2%;
+        left: 85%;
+        color: aliceblue;
+        z-index: 10;
+    }
+    .modal-img img{
+        //background-color: aqua;
+        //border: 2px solid black;
+        align-items: center;
+        width: 11rem;
+        height: 11rem;
+        margin-right: 0.1rem;
+        
+    }
+    .modal-links{
+        position: relative;
+        width: 100%;
+        margin-bottom: 1.4rem;
+        color: aliceblue;
+        font-size: 3rem;
+        margin-left:10%;
+        color: aliceblue;
+        bottom: 0rem;
+    }
 }

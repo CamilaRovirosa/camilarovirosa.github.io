@@ -55,18 +55,19 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    //border: solid 5px black;
     width: 100%;
     animation: fadeInUp 2s 1s;
-     animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
     &-project{
       cursor: pointer;
       padding: 1rem;
     }
     &-poster{
-      width: 350px;
+      width: 250px;
+      height: 250px;
       transform: scale(1);
       align-self: center;
       margin-bottom: 6px;
@@ -105,4 +106,21 @@
       padding-left: 2.5rem;
     }
   }
+}
+
+//responsive----------------------------
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+ 
+}
+
+@media screen and (max-width: 768px) {
+  
+    
+}
+@media screen and (max-width: 576px) {
+  
 }

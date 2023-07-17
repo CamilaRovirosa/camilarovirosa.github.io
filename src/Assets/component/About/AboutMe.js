@@ -34,7 +34,7 @@ const AboutMe =() =>{
             style1: "img1 img-scale",
         title: "Mis Hobbies" ,
         icon: <GiAxolotl/>,
-        description: "En mi tiempo libre disfruto distintos hobbies, entre ellos me encantan los videojuegos, mis favoritos son Final Fantasy XIII, The Legend of Zelda Twilight Princess y actualmente soy fan de Tetris 99, también me encantan las peliculas de accion como John Wick y Godzilla. Paso el tiempo aprendiendo dibujo y animación para mis proyectos personales. Hace dos años empecé un pequeño huerto y verlo crecer poco a poco me ha dado mucha felicidad y orgullo.",
+        description: "En mi tiempo libre disfruto dejugar videojuegos, mis favoritos son Final Fantasy XIII, The Legend of Zelda Twilight Princess y Tetris 99. Paso el tiempo aprendiendo dibujo y animación para mis proyectos personales. Hace dos años empecé un pequeño huerto que poco a poco a crecido.",
         },
         {id: 3,
             name:'work',
@@ -44,7 +44,7 @@ const AboutMe =() =>{
             style1: "img3 img-scaleV",
         title: "Estilo de Trabajo",
         icon: <GiBrain/>,
-        description: "Soy ingeniera en tecnologías computacionales graduada del Tecnológico de Monterrey en la ciudad de México. Mi método de trabajo es dinámico con mucho esfuerzo en trabajar con equipos y mantener el código  limpio y organizado. Siempre estoy dispuesta a aprender y mejorar mis habilidades para facilitar el progreso. Actualmente tengo experiencia usando React, Java Script , Unity, C# y Aseprite. Siempre estoy buscando aprender algo por lo que sigo tomando cursos de UX/UI, desarrollo web y diseño de videojuegos.",
+        description: "Soy ingeniera en tecnologías computacionales graduada del Tecnológico de Monterrey en la ciudad de México. Me gusta trabajar en trabajar con equipos o individual. Siempre estoy buscando aprender algo por lo que sigo tomando cursos de UX/UI, desarrollo web y diseño de videojuegos.",
         },
     ];
 

@@ -48,7 +48,7 @@ const Skills =() =>{
                     <div className="d2">
                         <div className="sk-ico" id="react" ><SiReact/></div>
                         <div className="sk-tl">React Native
-                            <span className="sk-percent">50%</span>
+                            <span className="sk-percent"> 50%</span>
                             <div className="sk-bar" >
                                 
                                     <Progress  done="50" />

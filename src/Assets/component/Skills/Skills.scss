@@ -18,15 +18,12 @@
 
 #dashboard-container {
  
- padding: 0 1em;
+  padding: 0 1em;
   margin: 5% auto;
   width: 85%;
   height: 88%;
-  //border-top: 3px solid #f0f8ff;
-    //justify-content: center;
-    align-items: center;
-    //display: grid;
-  
+  align-items: center;
+ 
     .title{
       position: relative;
       justify-content: center;
@@ -47,18 +44,15 @@
       
     }
 
-
   .me{
-
     font-family: 'Joystix','Comfortaa','Poppins', Arial, sans-serif;
     font-size: 3rem;
     font-weight:600;
     letter-spacing: 3px;
     color: #f0f8ff;
     text-align: center;
-    
-    //padding-top: 2.3em;
   }
+
   #controller{
     scale: 0.5;
   }
@@ -66,9 +60,6 @@
   .ribbon {
     width: 20rem;
     height: 5rem;
-    //bottom: 75%;
-    //right: 40%;
-    //margin: 100px auto 0px;
     position: relative;
     color: #7ca1c0;
     font-size: 3rem;
@@ -81,15 +72,12 @@
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
     border: #f0f8ff 5px solid;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    //box-shadow: #7c94a8df -8px 2px 12px, #7c94a8df 8px 2px 12px;
-    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
   }
   
   .ribbon i {
     position: absolute;
-    border-radius: 10%;
-    
+    border-radius: 10%;  
   }
   
   .ribbon i:first-child, .ribbon i:nth-child(2) {
@@ -98,9 +86,7 @@
     bottom: -2rem;
     z-index: -1;
     border: 20px solid transparent;
-    border-right-color: #aebecb ;
-    
-    
+    border-right-color: #aebecb ;    
   }
   
   .ribbon i:nth-child(2) {
@@ -251,41 +237,37 @@
     }
     
     #r{
-      //position: relative;
-      //top: 20%;
-      //right: 1em;
       margin-right: 1rem;
-      //border-radius: 50%;
       border-top: 1.5rem solid rgb(162, 75, 75);
       border-right: 1.5rem solid rgb(147, 68, 68);
       border-bottom: 1.5rem solid rgb(165, 99, 99);
       border-left: 1.5rem solid rgb(193, 135, 135); 
         
-  }
-  #y{
-      margin-right: 1rem;
-      border-top: 1.5rem solid rgb(151, 140, 66);
-      border-right: 1.5rem solid rgb(138, 134, 76);
-      border-bottom: 1.5rem solid rgb(149, 145, 37);
-      border-left: 1.5rem solid rgb(180, 163, 38); 
-  
-  }
-  #g{
-      margin-right: 1rem;
-      border-top: 1.5rem solid rgb(99, 169, 99);
-      border-right: 1.5rem solid rgb(80, 148, 80);
-      border-bottom: 1.5rem solid rgb(99, 165, 99);
-      border-left: 1.5rem solid rgb(135, 193, 135); 
-  
-  }
-  #b{
-      margin-right: 1rem;
-      border-top: 1.5rem solid rgb(70, 111, 208);
-      border-right: 1.5rem solid rgb(43, 75, 151);
-      border-bottom: 1.5rem solid rgb(37, 72, 149);
-      border-left: 1.5rem solid rgb(46, 94, 182); 
-  
-  }
+    }
+    #y{
+        margin-right: 1rem;
+        border-top: 1.5rem solid rgb(151, 140, 66);
+        border-right: 1.5rem solid rgb(138, 134, 76);
+        border-bottom: 1.5rem solid rgb(149, 145, 37);
+        border-left: 1.5rem solid rgb(180, 163, 38); 
+    
+    }
+    #g{
+        margin-right: 1rem;
+        border-top: 1.5rem solid rgb(99, 169, 99);
+        border-right: 1.5rem solid rgb(80, 148, 80);
+        border-bottom: 1.5rem solid rgb(99, 165, 99);
+        border-left: 1.5rem solid rgb(135, 193, 135); 
+    
+    }
+    #b{
+        margin-right: 1rem;
+        border-top: 1.5rem solid rgb(70, 111, 208);
+        border-right: 1.5rem solid rgb(43, 75, 151);
+        border-bottom: 1.5rem solid rgb(37, 72, 149);
+        border-left: 1.5rem solid rgb(46, 94, 182); 
+    
+    }
   .abs-t{
     position: relative;
     width: 1rem;
@@ -352,8 +334,6 @@
     grid-area: d1;
     display: flex;
     flex-wrap: wrap;
-   
-    //border: #f0f8ff 1px solid;
   }
   
   .d2 { grid-area: d2; 
@@ -405,8 +385,6 @@
     align-items: center;
   }
   .sk-tl{
-   //position: absolute ;
-   //right: 92%;
    margin-left: 5px;
     -webkit-flex: 2;
     -ms-flex: 2;
@@ -422,8 +400,6 @@
   }
   .sk-percent{
     position: relative;
-    right: 1
-    0px;
     font-size: 1.1em;
   }
 
@@ -451,24 +427,106 @@
   #micro{
     color: rgb(179, 67, 59);
   }
-//cambio de pantallas
-  @media only screen and (max-width: 576px) {
-    .title{
-      margin-bottom: 1rem;
-    
-      &__arr {
-        font-size: 4rem;
+}
 
-      }
-      
-    }
-    #dashboard-container {
- 
+
+//responsive----------------------------
+@media screen and (max-width: 1200px) {
+  .skills{
+    border: 5%;
+    max-width: 100%;
+    height:fit-content;
+    //min-height: fit-content !important;
+  }
+  #dashboard-container {
       padding: 0 1em;
        margin: 5% auto;
        width: 95%;
        height: 100%;
-      }
+      
+    .title{
+      padding-bottom: 5rem;
+      //margin-bottom: 1rem;
+    }
+    .title__arr {
+        font-size: 4rem;
+        color: aliceblue;  
+    }
+    .me{
+      font-size: 3rem;
+    }
+    #controller{
+      scale: 0.3;
+      align-self: center;
+      justify-content:baseline;
+    }
+    .abs-color{
+      height: 0.5rem;
+      width: 0.5rem;
+      
+    }
+    .abs-tl{
+      font-size: 1.5rem;
+    }
+    .items {  
+     
+      font-size: 1.2rem;      
+    }
+    .items-title {
+      bottom: 99%;
+
+    }
+    .sk-ico{
+      padding: 0.3rem;
+      font-size: 3.5rem;
+      -webkit-flex: 0.5;
+      -ms-flex: 0.5;
+      flex: 0.5;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+  
+    
+}
+@media screen and (max-width: 576px) {
+  .skills{
+    border: 5%;
+    max-width: 100%;
+    height:fit-content;
+    //min-height: fit-content !important;
+  }
+  #dashboard-container {
+      padding: 0 1em;
+       margin: 5% auto;
+       width: 95%;
+       height: 100%;
+      
+    .title{
+      padding-bottom: 3.2rem;
+      //margin-bottom: 1rem;
+    }
+    .title__arr {
+        font-size: 3.5rem;
+        color: aliceblue;  
+    }
+    .me{
+      font-size: 2.8rem;
+    }
+    #controller{
+      scale: 0.4;
+      align-self: center;
+      justify-content: center;
+    }
+    
     .manual-container{
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
@@ -476,13 +534,10 @@
       "items"
       "abs";
       gap: 5em 0em;
-      //align-items: center;
-      //justify-content: center;
-      
     }
     .abs {  
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.3fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
       gap: 0.5em 0em;
       grid-auto-flow: row;
       grid-template-areas:
@@ -494,16 +549,11 @@
         "m4"
         "m5";
       grid-area: abs;
-
-      
-
     }
-    
-    
     .items {  display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-      gap: .5em .3em;
+      grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+      gap: 0;
       grid-auto-flow: row;
       grid-template-areas:
         "sp"
@@ -517,15 +567,20 @@
         "d8";
       grid-area: items;
       justify-content: center;
+      font-size: 1.5rem;      
+    }
+    .items-title {
+      bottom: 99%;
+
+    }
+    .sk-ico{
+      padding: 0.3rem;
+      font-size: 3.5rem;
+      -webkit-flex: 0.5;
+      -ms-flex: 0.5;
+      flex: 0.5;
+      justify-content: center;
+      align-items: center;
     }
   }
-}
-@media only screen and (max-width: 576px) {
-  .skills{
-    border: 5%;
-    max-width: 100%;
-    height:fit-content;
-    //min-height: fit-content !important;
-  }
-  
 }

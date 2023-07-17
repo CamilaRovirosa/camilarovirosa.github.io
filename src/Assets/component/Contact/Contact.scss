@@ -1,24 +1,18 @@
 .con{
 
     border: 5%;
-    max-width: 100%;
+    max-width: 100vw;
     height: 90vh;
     min-height: fit-content !important;
     z-index: 2;
     justify-content: center;
     align-items: center;
-    //color: red;
-    //background-color: #c38890;
     position: relative;
-    //padding: 1em;
-    
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
 }
-.title{
+
+.titleC{
     align-content: center;
     align-items: center;
     animation: fadeInUp 1s 1s;
@@ -184,20 +178,14 @@
             position: relative;
             display: flex;
             align-self: center;
-            //align-items:flex-start;
             justify-content: center;
             left: 50%;
             width: 8rem;
             height: 8rem;
             border: dotted 8px aliceblue;
-            //background: aliceblue radial-gradient(#c38890 0px,#c38890 6px,transparent 6px);
             background-size: 18px 18px;
             background-position: -5px;
-            //border: 10px dashed rgba(255, 255, 255, 0.1);
-            //border-radius: 100px;
             box-shadow: 5px 5px 1px rgb(0 0 0 / 10%);
-            //box-shadow: 0 0 0 10px aliceblue;
-            //border-radius: 2%;
         }
 
         .postal::before{
@@ -214,5 +202,98 @@
         }
 }
 
+  //responsive----------------------------
+    @media screen and (max-width: 1200px) {
+        .card_pic{
+            width: 15%;
+            height: 95%;
+            margin-top: 2%;
+            margin-left: -10%;
+            //border-left: 5px dashed rgba(255, 255, 255, 0.1);
+        
+            .postal{
+                left: 80%;
+                width: 8rem;
+                height: 8rem;
+            }
+            .flat-button{
+                position: absolute;
+                display: flex;
+                align-self: center;
+                top: 72%;
+                right: 55%;
+                margin-top: 2em;
+                margin-left: 1.5em;
+                color:aliceblue;
+                background: 0 0;
+                font-size: 2rem;
+                padding: 10px 60px;
+            }
+        }
+    }
 
+    @media screen and (max-width: 992px) {
+        
+    }
 
+    @media screen and (max-width: 768px) {
+
+        
+    }
+    @media screen and (max-width: 576px) {
+        
+     
+        .titleC{
+            margin-top: 5%;
+        }
+        .titleC__arr {
+            font-size: 3rem;
+            padding-bottom: 5%;
+           
+        }
+        .card{
+            width: 90%;
+            height: 70%;
+            &_contact-form{
+                width: 100%;
+                height: 100%;
+                margin-top: 5%;
+                margin-left: 5%;
+                //z-index: 1;
+                
+            }
+            .half{
+                width: 100%;
+                margin-top: 2%;
+                margin-left: 0%;
+                
+            }
+        }
+        
+        .card_pic{
+            width: 15%;
+            height: 95%;
+            margin-top: 2%;
+            margin-left: -10%;
+            //border-left: 5px dashed rgba(255, 255, 255, 0.1);
+        
+            .postal{
+                display: none;
+            
+            }
+            .flat-button{
+                position: absolute;
+                display: flex;
+                align-self: center;
+                top: 78%;
+                right: 5%;
+                margin-top: 2em;
+                margin-left: 1.5em;
+                color:aliceblue;
+                background: 0 0;
+                font-size: 2rem;
+                padding: 10px 60px;
+            }
+        }
+            
+    }
