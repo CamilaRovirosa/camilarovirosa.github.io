@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portafolio/static/css/main.a9997ff0.css",
+    "main.js": "/portafolio/static/js/main.a0b79946.js",
+    "static/js/787.ae0d8d37.chunk.js": "/portafolio/static/js/787.ae0d8d37.chunk.js",
+    "static/media/piso.png": "/portafolio/static/media/piso.9cf8a725865b15879518.png",
+    "static/media/portafoli1.png": "/portafolio/static/media/portafoli1.d636847779302e72216b.png",
+    "static/media/casaYverde.svg": "/portafolio/static/media/casaYverde.3090daf95bffabbeea71a8763d920856.svg",
+    "static/media/3D-Thirteen-Pixel-Fonts.ttf": "/portafolio/static/media/3D-Thirteen-Pixel-Fonts.5bb278a431d84e307b85.ttf",
+    "static/media/CV_CamilaRovirosa_Español.pdf": "/portafolio/static/media/CV_CamilaRovirosa_Español.4416c6a13b4cec16b3de.pdf",
+    "static/media/MobileFont.ttf": "/portafolio/static/media/MobileFont.87d86b1fcd8a24a8a706.ttf",
+    "static/media/progress.png": "/portafolio/static/media/progress.2db475c58c793f3bc027.png",
+    "static/media/portafoli2.png": "/portafolio/static/media/portafoli2.e9ba21598c1e8b9b51df.png",
+    "static/media/PressStart2P-Regular.ttf": "/portafolio/static/media/PressStart2P-Regular.c5b470938391e423c6d6.ttf",
+    "static/media/luz.svg": "/portafolio/static/media/luz.c8e6b79388c2290594dc517fe09b229c.svg",
+    "static/media/ka1.ttf": "/portafolio/static/media/ka1.5df8cd545dcd2db2bf8b.ttf",
+    "static/media/portafoli4.png": "/portafolio/static/media/portafoli4.7381093b80d44f314331.png",
+    "static/media/joystixMonospace.ttf": "/portafolio/static/media/joystixMonospace.03fd394186f4c9707258.ttf",
+    "static/media/simplto2.ttf": "/portafolio/static/media/simplto2.2200faf272bc5f5df1c8.ttf",
+    "static/media/portafoli5.png": "/portafolio/static/media/portafoli5.e2e10a418f9970e8eaf1.png",
+    "static/media/casa1-5_compressed.png": "/portafolio/static/media/casa1-5_compressed.e6bc62910a1f8f6cbf68.png",
+    "static/media/portafoli3.png": "/portafolio/static/media/portafoli3.e92c790ae70604d6e876.png",
+    "static/media/nubes2.svg": "/portafolio/static/media/nubes2.a92662659a8a5f3189bcf886f2f26c70.svg",
+    "static/media/nubes1.svg": "/portafolio/static/media/nubes1.a61cebe0a79c7973a2387b78f6e98813.svg",
+    "static/media/nubes3.svg": "/portafolio/static/media/nubes3.9bebdb978d4b054b2096b65131a96669.svg",
+    "static/media/fondoOscuro.svg": "/portafolio/static/media/fondoOscuro.30b9c5911df0217c93099992bc427a53.svg",
+    "index.html": "/portafolio/index.html",
+    "main.a9997ff0.css.map": "/portafolio/static/css/main.a9997ff0.css.map",
+    "main.a0b79946.js.map": "/portafolio/static/js/main.a0b79946.js.map",
+    "787.ae0d8d37.chunk.js.map": "/portafolio/static/js/787.ae0d8d37.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9997ff0.css",
+    "static/js/main.a0b79946.js"
+  ]
+}
