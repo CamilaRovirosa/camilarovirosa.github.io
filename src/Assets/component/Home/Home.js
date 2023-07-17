@@ -1,25 +1,20 @@
 import React, { useEffect, useState } from "react";
 import {Link} from 'react-scroll';
-import Loader from "../loader/Loader.js"
 import AnimatedLettes from "../AnimatedLetters/AnimatedLetters.js";
 import Banner from "../Banner/Banner.js";
-//import Saludo from "./Saludo"
 import './Home.scss'
 const Home = ()=> {
     const [letterClass, setLetterClass] = useState('text-animate');
-    const[isMobile, setIsMobile]= useState(false);
+    const[isMobile]= useState(false);
     const helloArray=['H','o','l','a','  !'];
     const amArray=['S','o','y'];
     const nameArray=['C','a','m','i','l','a'];
-    //const jobArray=['G','a','m','e','D','e','v','e','l','o','p','e','r']
     useEffect(() => {
         const timer = setTimeout(() => {
           setLetterClass('text-animate-hover')
         }, 4000)
         return () => clearTimeout(timer);
       }, []);
-
-      const txt = document.getElementById('txt');
     const [offsetY, setOffsetY]= useState('layer');
     useEffect(()=>{
         
@@ -32,11 +27,6 @@ const Home = ()=> {
 
         }, []);
 
-        const handleResize = () =>{
-            if (window.innerWidth< '993px'){
-                setIsMobile(!isMobile)
-            }
-        }
     return (
         
         <div name="home" className="home-page">
