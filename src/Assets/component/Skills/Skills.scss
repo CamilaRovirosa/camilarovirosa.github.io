@@ -518,7 +518,7 @@
       justify-content: center;
     }
     .controller{
-      margin-bottom: 1.5rem;
+      padding-bottom: 2.5rem;
     }
     .manual-container{
       grid-template-columns: 1fr;
@@ -573,5 +573,20 @@
       justify-content: center;
       align-items: center;
     }
+  }
+}
+@media screen and (max-width: 376px) {
+  
+  #dashboard-container {
+
+    #controller{
+      scale: 0.36;
+      align-self: center;
+      justify-content: center;
+    }
+    .controller{
+      padding-bottom: 3.5rem;
+    }
+    
   }
 }
