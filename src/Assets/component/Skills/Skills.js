@@ -100,28 +100,7 @@ const Skills =() =>{
                             </div>
                         </div>
                     </div>
-                    <div className="d7">
-                    <div className="sk-ico" id="bomb"><FaBomb/></div>
-                        <div className="sk-tl">Bombs
-                            
-                            <div className="sk-bar" >
-                                
-                                    <Progress  done="100" />
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="d8">
-                        <div className="sk-ico" id="key"><GiSkeletonKey/></div>
-                        <div className="sk-tl">Skull Key
-                            
-                            <div className="sk-bar" >
-                                
-                                    <Progress  done="100" />
-                                
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 
                 <div className="abs">

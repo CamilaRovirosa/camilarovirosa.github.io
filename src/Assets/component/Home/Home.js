@@ -49,7 +49,7 @@ const Home = ()=> {
                     /> 
                 </h1>
                 <br/>
-                <h2 className="h2">Frontend Developer / Game Devepler?</h2>
+                <h2 className="h2">Frontend Developer / Game Developer?</h2>
                 <Link to='contact' className="flat-button">Hablemos</Link>
             </div>
             <Banner/>

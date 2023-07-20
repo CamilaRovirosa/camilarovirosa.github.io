@@ -361,16 +361,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  
-  .d7 { grid-area: d7;
-    display: flex;
-    flex-wrap: wrap;
-   }
-  
-  .d8 { grid-area: d8;
-    display: flex;
-    flex-wrap: wrap;
-   }
+
 
   .sk-ico{
     grid-area: sk-ico;
@@ -526,7 +517,9 @@
       align-self: center;
       justify-content: center;
     }
-    
+    .controller{
+      margin-bottom: 1.5rem;
+    }
     .manual-container{
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
@@ -562,9 +555,7 @@
         "d3"
         "d4"
         "d5"
-        "d6"
-        "d7"
-        "d8";
+        "d6";
       grid-area: items;
       justify-content: center;
       font-size: 1.5rem;      
