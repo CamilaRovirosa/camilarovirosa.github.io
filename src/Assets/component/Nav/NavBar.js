@@ -44,7 +44,7 @@ const NavBar = () =>{
                         </Link>
                     </li>
                     <li className="nav-bar-tab">
-                    <a href={CV}  target="_blank" rel="noopener noreferrer">CV</a>
+                    <a href={CV}  target="_blank" rel=" nofollow noopener noreferrer">CV</a>
 
                     </li>
                 </ul>

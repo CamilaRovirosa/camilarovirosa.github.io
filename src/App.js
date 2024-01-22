@@ -9,6 +9,7 @@ import Skills from "./Assets/component/Skills/Skills";
 import Footer from "./Assets/component/Footer/Footer";
 import Loader from "./Assets/component/loader/Loader";
 import  "./App.scss";
+import './i18n';
 import NavBar from "./Assets/component/Nav/NavBar.js";
 function App() {
   const [loading, setLoading] = useState(false);
