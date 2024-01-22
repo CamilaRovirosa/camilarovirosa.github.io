@@ -11,6 +11,10 @@ const NavBar = () =>{
    const handleShowNav=()=>{
         setShowNav(!showNav);
    }
+   onResumeClick() {
+    window.open(CV);
+  }
+  
     return ( 
         //Desktop
         <div className="nav-bar-container">
@@ -44,8 +48,7 @@ const NavBar = () =>{
                         </Link>
                     </li>
                     <li className="nav-bar-tab">
-                    <a href={CV}  target="_blank" rel=" nofollow noopener noreferrer">CV</a>
-
+                    <button onClick={this.onResumeClick}>CV</button>
                     </li>
                 </ul>
             {/*/Mobile*/} 
