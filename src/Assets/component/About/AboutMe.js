@@ -13,7 +13,7 @@ import cuadrado from '../../images/cuadroazul.png';
 import core from '../../images/CorePortrait.png';
 import verde from '../../images/CuadroVerde.png';
 import work from '../../images/WorkPortrait.png';
-
+/*global slides*/
 const AboutMe =() =>{
     const {t} = useTranslation();
     
@@ -45,7 +45,7 @@ const AboutMe =() =>{
                     <FaLaptopCode/>
                         
                 </div>
-                <div className='slider ' >  
+                <div className='slider' >  
                     <div className='slider__item'>
                                         
                         <div className='slider__pic'>
